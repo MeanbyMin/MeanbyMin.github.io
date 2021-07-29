@@ -9,8 +9,56 @@
 
 
     <url>
-        <loc>https://meanbymin.github.io/2021/07/30/hello-world/</loc>
-        <lastmod>2021-07-29T16:41:03.600Z</lastmod>
+        <loc>https://meanbymin.github.io/2021/07/19/blog/blog_01/</loc>
+        <lastmod>2021-07-29T18:30:34.983Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://meanbymin.github.io/2021/07/30/CS/CS_01/</loc>
+        <lastmod>2021-07-29T18:17:35.138Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://meanbymin.github.io/2021/07/27/TIL/20210727_TIL/</loc>
+        <lastmod>2021-07-29T18:12:22.360Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://meanbymin.github.io/2021/07/26/TIL/20210726_TIL/</loc>
+        <lastmod>2021-07-29T18:11:15.938Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://meanbymin.github.io/2021/07/28/TIL/20210728_TIL/</loc>
+        <lastmod>2021-07-29T18:10:08.147Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://meanbymin.github.io/2021/07/22/TIL/20210722_TIL/</loc>
+        <lastmod>2021-07-29T18:06:29.889Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://meanbymin.github.io/2021/07/29/TIL/20210729_TIL/</loc>
+        <lastmod>2021-07-29T18:06:21.322Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
