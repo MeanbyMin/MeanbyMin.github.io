@@ -22,18 +22,24 @@
   </script>
 
   <meta name="google-site-verification" content="s45GIhxLWuuO20GBcA46diPot4GT3i6b1AmYSWAuDUc" />
-  <meta name="description" content="MeanbyMin의 개발 블로그">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Minlog">
-<meta property="og:url" content="https://meanbymin.github.io/tags/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/index.html">
+  <meta name="description" content="Git push를 했는데, 이상한 commit(커밋)이 올라가있다 ?">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[Git] Push한 Commit 수정하기">
+<meta property="og:url" content="https://meanbymin.github.io/2021/07/30/Git/Git_01/index.html">
 <meta property="og:site_name" content="Minlog">
-<meta property="og:description" content="MeanbyMin의 개발 블로그">
+<meta property="og:description" content="Git push를 했는데, 이상한 commit(커밋)이 올라가있다 ?">
 <meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://mblogthumb-phinf.pstatic.net/20160312_91/ggaymon_14577899342397WdQA_JPEG/68.jpeg?type=w800">
+<meta property="og:image" content="https://meanbymin.github.io/images/rebase.png">
+<meta property="og:image" content="https://meanbymin.github.io/images/reword.png">
+<meta property="article:published_time" content="2021-07-29T15:00:00.000Z">
+<meta property="article:modified_time" content="2021-07-30T06:17:06.887Z">
 <meta property="article:author" content="MeanbyMin">
-<meta property="article:tag" content="프론트엔드, 프론트엔드 개발자, FE, 개발자, 개발블로그">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://mblogthumb-phinf.pstatic.net/20160312_91/ggaymon_14577899342397WdQA_JPEG/68.jpeg?type=w800">
 
-<link rel="canonical" href="https://meanbymin.github.io/tags/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/">
+<link rel="canonical" href="https://meanbymin.github.io/2021/07/30/Git/Git_01/">
 
 
 <script id="page-configurations">
@@ -41,12 +47,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'ko'
   };
 </script>
 
-  <title>태그: 운영체제 | Minlog</title>
+  <title>[Git] Push한 Commit 수정하기 | Minlog</title>
   
 
 
@@ -195,57 +201,164 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="ko">
+    <link itemprop="mainEntityOfPage" href="https://meanbymin.github.io/2021/07/30/Git/Git_01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="MeanbyMin">
+      <meta itemprop="description" content="MeanbyMin의 개발 블로그">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Minlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          [Git] Push한 Commit 수정하기
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">작성일</span>
+              
+
+              <time title="Post created: 2021-07-30 00:00:00 / Updated at: 15:17:06" itemprop="dateCreated datePublished" datetime="2021-07-30T00:00:00+09:00">2021-07-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
   
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">운영체제
-          <small>태그</small>
-        </h2>
-      </div>
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2021/07/30/Git/Git_01/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/07/30/Git/Git_01/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+        <h2 id="Git-push를-했는데-이상한-commit-커밋-이-올라가있다"><a href="#Git-push를-했는데-이상한-commit-커밋-이-올라가있다" class="headerlink" title="Git push를 했는데, 이상한 commit(커밋)이 올라가있다 ?"></a>Git push를 했는데, 이상한 commit(커밋)이 올라가있다 ?</h2><br>
+
+<p><img src="https://mblogthumb-phinf.pstatic.net/20160312_91/ggaymon_14577899342397WdQA_JPEG/68.jpeg?type=w800" alt="어이없어"></p>
+<span id="more"></span>
+
+<br>
+
+<p>아직까지 깃과 깃허브 초보인 나에게 잘못된 push 실수는 자주 일어나는 일이다.<br>그래서 나는 항상 다시 commit을 쓰고 push 해서 덮어썼었다.</p>
+<br>
+
+<h2 id="💡-git-push-후-commit-수정하는-법을-알아보자"><a href="#💡-git-push-후-commit-수정하는-법을-알아보자" class="headerlink" title="💡 git push 후 commit 수정하는 법을 알아보자"></a>💡 git push 후 commit 수정하는 법을 알아보자</h2><ol>
+<li><p><code>git</code> 파일이 있는 폴더로 이동합니다.</p>
+</li>
+<li><p>rebase 명령어를 실행합니다.</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase HEAD~[거슬러 올라가고 싶은 커밋 수] -i</span><br></pre></td></tr></table></figure>
+
+<p>만약 바로 전 커밋의 메세지를 수정하고 싶다면,</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase HEAD~1 -i</span><br></pre></td></tr></table></figure>
+
+<p>이렇게 작성하시면 됩니다.</p>
+<ol start="3">
+<li><p>이때 화면에 뜨는 <code>pick</code>을 <code>reword</code>로 변경해줍니다.</p>
+<ul>
+<li>수정은 i를 눌리면 insert mode로 진입하게 되고 수정이 가능합니다.</li>
+</ul>
+</li>
+</ol>
+<p><img src="/images/rebase.png" alt="pick"><br><img src="/images/reword.png" alt="reword"></p>
+<ol start="4">
+<li><p>수정 후 <code>esc</code>키를 눌린 후 <code>:wq</code>를 입력하고 엔터를 칩니다.</p>
+</li>
+<li><p>그렇게 하고나면 이제 진짜 <code>commit</code>을 수정할 수 있습니다. 위와 똑같이 <code>i</code>키를 눌려 편집 모드로 변경한 후 수정하시면 됩니다. 수정을 완료하였으면 <code>esc</code>키를 눌린 후에 이번에는 <code>:wq!</code>를 입력하고 편집기를 빠져나옵니다.</p>
+</li>
+<li><p>강제 <code>push</code>를 하여서 수정 내용은 원격 저장소에 반영합니다.</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push --force</span><br></pre></td></tr></table></figure>
+
+<p>만약에 현재 브랜치에 강제 푸쉬를 하려면 아래처럼 하시면 됩니다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin [브랜치명] -f</span><br></pre></td></tr></table></figure>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-07-30T00:00:00+09:00"
-              content="2021-07-30">
-          07-30
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Git/" rel="tag"># Git</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/07/30/CS/CS_01/" itemprop="url">
-            <span itemprop="name">[운영체제] 운영체제와 운영체제의 역할</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/07/30/CS/CS_01/" rel="prev" title="[운영체제] 운영체제와 운영체제의 역할">
+      <i class="fa fa-chevron-left"></i> [운영체제] 운영체제와 운영체제의 역할
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -292,6 +405,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-push%EB%A5%BC-%ED%96%88%EB%8A%94%EB%8D%B0-%EC%9D%B4%EC%83%81%ED%95%9C-commit-%EC%BB%A4%EB%B0%8B-%EC%9D%B4-%EC%98%AC%EB%9D%BC%EA%B0%80%EC%9E%88%EB%8B%A4"><span class="nav-number">1.</span> <span class="nav-text">Git push를 했는데, 이상한 commit(커밋)이 올라가있다 ?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%92%A1-git-push-%ED%9B%84-commit-%EC%88%98%EC%A0%95%ED%95%98%EB%8A%94-%EB%B2%95%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90"><span class="nav-number">2.</span> <span class="nav-text">💡 git push 후 commit 수정하는 법을 알아보자</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -451,6 +565,26 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://meanbymin.github.io/2021/07/30/Git/Git_01/";
+    this.page.identifier = "2021/07/30/Git/Git_01/";
+    this.page.title = "[Git] Push한 Commit 수정하기";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://Minlog.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
 </script>
 
 </body>
