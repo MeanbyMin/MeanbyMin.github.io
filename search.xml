@@ -1,59 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>[Git] Push한 Commit 수정하기</title>
-    <url>/2021/07/30/Git/Git_01/</url>
-    <content><![CDATA[<h2 id="Git-push를-했는데-이상한-commit-커밋-이-올라가있다"><a href="#Git-push를-했는데-이상한-commit-커밋-이-올라가있다" class="headerlink" title="Git push를 했는데, 이상한 commit(커밋)이 올라가있다 ?"></a>Git push를 했는데, 이상한 commit(커밋)이 올라가있다 ?</h2><br>
-
-<p><img src="https://mblogthumb-phinf.pstatic.net/20160312_91/ggaymon_14577899342397WdQA_JPEG/68.jpeg?type=w800" alt="어이없어"></p>
-<span id="more"></span>
-
-<br>
-
-<p>아직까지 깃과 깃허브 초보인 나에게 잘못된 push 실수는 자주 일어나는 일이다.<br>그래서 나는 항상 다시 commit을 쓰고 push 해서 덮어썼었다.</p>
-<br>
-
-<h2 id="💡-git-push-후-commit-수정하는-법을-알아보자"><a href="#💡-git-push-후-commit-수정하는-법을-알아보자" class="headerlink" title="💡 git push 후 commit 수정하는 법을 알아보자"></a>💡 git push 후 commit 수정하는 법을 알아보자</h2><ol>
-<li><p><code>git</code> 파일이 있는 폴더로 이동합니다.</p>
-</li>
-<li><p>rebase 명령어를 실행합니다.</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git rebase HEAD~[거슬러 올라가고 싶은 커밋 수] -i</span><br></pre></td></tr></table></figure>
-
-<p>만약 바로 전 커밋의 메세지를 수정하고 싶다면,</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git rebase HEAD~1 -i</span><br></pre></td></tr></table></figure>
-
-<p>이렇게 작성하시면 됩니다.</p>
-<ol start="3">
-<li><p>이때 화면에 뜨는 <code>pick</code>을 <code>reword</code>로 변경해줍니다.</p>
-<ul>
-<li>수정은 i를 눌리면 insert mode로 진입하게 되고 수정이 가능합니다.</li>
-</ul>
-</li>
-</ol>
-<p><img src="/images/rebase.png" alt="pick"><br><img src="/images/reword.png" alt="reword"></p>
-<ol start="4">
-<li><p>수정 후 <code>esc</code>키를 눌린 후 <code>:wq</code>를 입력하고 엔터를 칩니다.</p>
-</li>
-<li><p>그렇게 하고나면 이제 진짜 <code>commit</code>을 수정할 수 있습니다. 위와 똑같이 <code>i</code>키를 눌려 편집 모드로 변경한 후 수정하시면 됩니다. 수정을 완료하였으면 <code>esc</code>키를 눌린 후에 이번에는 <code>:wq!</code>를 입력하고 편집기를 빠져나옵니다.</p>
-</li>
-<li><p>강제 <code>push</code>를 하여서 수정 내용은 원격 저장소에 반영합니다.</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push --force</span><br></pre></td></tr></table></figure>
-
-<p>만약에 현재 브랜치에 강제 푸쉬를 하려면 아래처럼 하시면 됩니다.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin [브랜치명] -f</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[운영체제] 운영체제와 운영체제의 역할</title>
     <url>/2021/07/30/CS/CS_01/</url>
     <content><![CDATA[<h2 id="💡-운영체제란"><a href="#💡-운영체제란" class="headerlink" title="💡 운영체제란 ?"></a>💡 운영체제란 ?</h2><p><strong>운영체제(Operating System)</strong> 는 사용자가 컴퓨터를 사용하기 위해 필요한 소프트웨어이다. 우리가 일반적으로 컴퓨터를 사용하면서 실행한 모든 프로그램들은 운영체제에서 관리하고 제어한다.</p>
@@ -142,6 +89,59 @@
       </tags>
   </entry>
   <entry>
+    <title>[Git] Push한 Commit 수정하기</title>
+    <url>/2021/07/30/Git/Git_01/</url>
+    <content><![CDATA[<h2 id="Git-push를-했는데-이상한-commit-커밋-이-올라가있다"><a href="#Git-push를-했는데-이상한-commit-커밋-이-올라가있다" class="headerlink" title="Git push를 했는데, 이상한 commit(커밋)이 올라가있다 ?"></a>Git push를 했는데, 이상한 commit(커밋)이 올라가있다 ?</h2><br>
+
+<p><img src="https://mblogthumb-phinf.pstatic.net/20160312_91/ggaymon_14577899342397WdQA_JPEG/68.jpeg?type=w800" alt="어이없어"></p>
+<span id="more"></span>
+
+<br>
+
+<p>아직까지 깃과 깃허브 초보인 나에게 잘못된 push 실수는 자주 일어나는 일이다.<br>그래서 나는 항상 다시 commit을 쓰고 push 해서 덮어썼었다.</p>
+<br>
+
+<h2 id="💡-git-push-후-commit-수정하는-법을-알아보자"><a href="#💡-git-push-후-commit-수정하는-법을-알아보자" class="headerlink" title="💡 git push 후 commit 수정하는 법을 알아보자"></a>💡 git push 후 commit 수정하는 법을 알아보자</h2><ol>
+<li><p><code>git</code> 파일이 있는 폴더로 이동합니다.</p>
+</li>
+<li><p>rebase 명령어를 실행합니다.</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git rebase HEAD~[거슬러 올라가고 싶은 커밋 수] -i</span><br></pre></td></tr></table></figure>
+
+<p>만약 바로 전 커밋의 메세지를 수정하고 싶다면,</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git rebase HEAD~1 -i</span><br></pre></td></tr></table></figure>
+
+<p>이렇게 작성하시면 됩니다.</p>
+<ol start="3">
+<li><p>이때 화면에 뜨는 <code>pick</code>을 <code>reword</code>로 변경해줍니다.</p>
+<ul>
+<li>수정은 i를 눌리면 insert mode로 진입하게 되고 수정이 가능합니다.</li>
+</ul>
+</li>
+</ol>
+<p><img src="/images/rebase.png" alt="pick"><br><img src="/images/reword.png" alt="reword"></p>
+<ol start="4">
+<li><p>수정 후 <code>esc</code>키를 눌린 후 <code>:wq</code>를 입력하고 엔터를 칩니다.</p>
+</li>
+<li><p>그렇게 하고나면 이제 진짜 <code>commit</code>을 수정할 수 있습니다. 위와 똑같이 <code>i</code>키를 눌려 편집 모드로 변경한 후 수정하시면 됩니다. 수정을 완료하였으면 <code>esc</code>키를 눌린 후에 이번에는 <code>:wq!</code>를 입력하고 편집기를 빠져나옵니다.</p>
+</li>
+<li><p>강제 <code>push</code>를 하여서 수정 내용은 원격 저장소에 반영합니다.</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push --force</span><br></pre></td></tr></table></figure>
+
+<p>만약에 현재 브랜치에 강제 푸쉬를 하려면 아래처럼 하시면 됩니다.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin [브랜치명] -f</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>[TIL]2021.07.22</title>
     <url>/2021/07/22/TIL/20210722_TIL/</url>
     <content><![CDATA[<h2 id="💡오늘-한-일"><a href="#💡오늘-한-일" class="headerlink" title="💡오늘 한 일"></a><strong>💡오늘 한 일</strong></h2><span id="more"></span>
@@ -203,40 +203,6 @@
       </tags>
   </entry>
   <entry>
-    <title>[TIL]2021.07.26</title>
-    <url>/2021/07/26/TIL/20210726_TIL/</url>
-    <content><![CDATA[<h2 id="💡오늘-한-일"><a href="#💡오늘-한-일" class="headerlink" title="💡오늘 한 일"></a><strong>💡오늘 한 일</strong></h2><ul>
-<li>깃허브 블로그 작업</li>
-<li>자바스크립트 인강</li>
-<li>가격별 상품 추천 프로그램 로직</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="💬-느낀점"><a href="#💬-느낀점" class="headerlink" title="💬 느낀점"></a><strong>💬 느낀점</strong></h2><ul>
-<li><p>깃허브 블로그를 어제부터 시작했다. <code>Jerkll minimal-mistakes</code> 테마를 사용해서 블로그를 꾸미고 있는데, 여러 사람의 블로그를 보고 따라서 했었다. 하지만 역시나 다른 분들이 만들어 놓은 것을 보고 내가 원하는 방식으로 꾸미는 것보다 공식문서를 보고 하는 것이 맞다고 느꼈다.</p>
-<blockquote>
-<p>공식문서를 읽자 !!</p>
-</blockquote>
-</li>
-<li><p>자바스크립트 배열을 공부했는데, 자바스크립트는 복습을 하면 할수록 받아들여지는 것이 달라지는 것 같다. 처음 봤을 때 이해 못했던 것들이 이해되기 시작하고, 포트폴리오를 만들면서 사용했던 함수들이 조금 더 정리되는 느낌을 받았다.</p>
-</li>
-<li><p>아주 간단한 문제였지만, 로직을 오랜만에 짜서 그런지 더 많은 공부를 해야겠구나 느꼈다.data 배열을 가지고 입력값에 따라서 상품을 추천해주는 프로그램 로직인데 좀 더 코드를 깔끔하게 짤 수 있을 것 같은 느낌이 드는데 코드를 줄이지 못했다. 조금 더 생각해보아야 할 듯하다.</p>
-</li>
-</ul>
-<h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a><strong>📌 내일 할 일</strong></h2><ul>
-<li>깃허브 블로그 작업</li>
-<li>파이썬 공부</li>
-<li>Quiz 풀이</li>
-</ul>
-]]></content>
-      <categories>
-        <category>TIL</category>
-      </categories>
-      <tags>
-        <tag>TIL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[TIL]2021.07.27</title>
     <url>/2021/07/27/TIL/20210727_TIL/</url>
     <content><![CDATA[<h2 id="💡오늘-한-일"><a href="#💡오늘-한-일" class="headerlink" title="💡오늘 한 일"></a><strong>💡오늘 한 일</strong></h2><ul>
@@ -263,30 +229,30 @@
       </tags>
   </entry>
   <entry>
-    <title>[TIL]2021.07.29</title>
-    <url>/2021/07/29/TIL/20210729_TIL/</url>
-    <content><![CDATA[<h2 id="💡-오늘-한-일"><a href="#💡-오늘-한-일" class="headerlink" title="💡 오늘 한 일"></a>💡 오늘 한 일</h2><ul>
-<li>Git/Github 복습</li>
-<li>컴퓨터 공학 공부</li>
-<li>Hexo 블로그 문서 읽기</li>
+    <title>[TIL]2021.07.26</title>
+    <url>/2021/07/26/TIL/20210726_TIL/</url>
+    <content><![CDATA[<h2 id="💡오늘-한-일"><a href="#💡오늘-한-일" class="headerlink" title="💡오늘 한 일"></a><strong>💡오늘 한 일</strong></h2><ul>
+<li>깃허브 블로그 작업</li>
+<li>자바스크립트 인강</li>
+<li>가격별 상품 추천 프로그램 로직</li>
 </ul>
 <span id="more"></span>
 
-<br>
-
-<h2 id="💬-느낀점"><a href="#💬-느낀점" class="headerlink" title="💬 느낀점"></a>💬 느낀점</h2><ul>
-<li>Hexo 블로그에 SEO를 위해 구글 웹마스터를 세팅하였지만, 아직 읽어들이지는 못하고 있다.</li>
-<li>Hexo를 꾸미고 있는데, 점점 블로그에 애정이 가기 시작하는 것 같다.</li>
-<li>운영체제에 대해서 배우고있는데, 비전공자이다보니 아직까지 생소한 부분들이 많다. 더 공부하고 더 많이 익혀서 개발자가 되도록 준비해야겠다.</li>
-<li>git flow의 흐름에 대해서 복습했는데, 협업을 통해서 더 익숙해져야할 것 같다.</li>
+<h2 id="💬-느낀점"><a href="#💬-느낀점" class="headerlink" title="💬 느낀점"></a><strong>💬 느낀점</strong></h2><ul>
+<li><p>깃허브 블로그를 어제부터 시작했다. <code>Jerkll minimal-mistakes</code> 테마를 사용해서 블로그를 꾸미고 있는데, 여러 사람의 블로그를 보고 따라서 했었다. 하지만 역시나 다른 분들이 만들어 놓은 것을 보고 내가 원하는 방식으로 꾸미는 것보다 공식문서를 보고 하는 것이 맞다고 느꼈다.</p>
+<blockquote>
+<p>공식문서를 읽자 !!</p>
+</blockquote>
+</li>
+<li><p>자바스크립트 배열을 공부했는데, 자바스크립트는 복습을 하면 할수록 받아들여지는 것이 달라지는 것 같다. 처음 봤을 때 이해 못했던 것들이 이해되기 시작하고, 포트폴리오를 만들면서 사용했던 함수들이 조금 더 정리되는 느낌을 받았다.</p>
+</li>
+<li><p>아주 간단한 문제였지만, 로직을 오랜만에 짜서 그런지 더 많은 공부를 해야겠구나 느꼈다.data 배열을 가지고 입력값에 따라서 상품을 추천해주는 프로그램 로직인데 좀 더 코드를 깔끔하게 짤 수 있을 것 같은 느낌이 드는데 코드를 줄이지 못했다. 조금 더 생각해보아야 할 듯하다.</p>
+</li>
 </ul>
-<br>
-
-<h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a>📌 내일 할 일</h2><ul>
-<li>Rubber Duck Debugging</li>
-<li>PR 수정하기</li>
-<li>블로그 작성 (2주차 회고록)</li>
-<li>Quiz 제작</li>
+<h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a><strong>📌 내일 할 일</strong></h2><ul>
+<li>깃허브 블로그 작업</li>
+<li>파이썬 공부</li>
+<li>Quiz 풀이</li>
 </ul>
 ]]></content>
       <categories>
@@ -333,6 +299,123 @@
       </categories>
       <tags>
         <tag>TIL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[TIL]2021.07.29</title>
+    <url>/2021/07/29/TIL/20210729_TIL/</url>
+    <content><![CDATA[<h2 id="💡-오늘-한-일"><a href="#💡-오늘-한-일" class="headerlink" title="💡 오늘 한 일"></a>💡 오늘 한 일</h2><ul>
+<li>Git/Github 복습</li>
+<li>컴퓨터 공학 공부</li>
+<li>Hexo 블로그 문서 읽기</li>
+</ul>
+<span id="more"></span>
+
+<br>
+
+<h2 id="💬-느낀점"><a href="#💬-느낀점" class="headerlink" title="💬 느낀점"></a>💬 느낀점</h2><ul>
+<li>Hexo 블로그에 SEO를 위해 구글 웹마스터를 세팅하였지만, 아직 읽어들이지는 못하고 있다.</li>
+<li>Hexo를 꾸미고 있는데, 점점 블로그에 애정이 가기 시작하는 것 같다.</li>
+<li>운영체제에 대해서 배우고있는데, 비전공자이다보니 아직까지 생소한 부분들이 많다. 더 공부하고 더 많이 익혀서 개발자가 되도록 준비해야겠다.</li>
+<li>git flow의 흐름에 대해서 복습했는데, 협업을 통해서 더 익숙해져야할 것 같다.</li>
+</ul>
+<br>
+
+<h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a>📌 내일 할 일</h2><ul>
+<li>Rubber Duck Debugging</li>
+<li>PR 수정하기</li>
+<li>블로그 작성 (2주차 회고록)</li>
+<li>Quiz 제작</li>
+</ul>
+]]></content>
+      <categories>
+        <category>TIL</category>
+      </categories>
+      <tags>
+        <tag>TIL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[TIL]2021.07.30 + 회고</title>
+    <url>/2021/07/30/TIL/20210730_TIL/</url>
+    <content><![CDATA[<h2 id="💡-오늘-한-일"><a href="#💡-오늘-한-일" class="headerlink" title="💡 오늘 한 일"></a>💡 오늘 한 일</h2><ul>
+<li>Rubber Duck Debugging</li>
+<li>개발 블로그 작성</li>
+<li>Quiz 제작</li>
+</ul>
+<span id="more"></span>
+
+<br>
+
+<h2 id="✍🏻-회고"><a href="#✍🏻-회고" class="headerlink" title="✍🏻 회고"></a>✍🏻 회고</h2><ol>
+<li><p>깃허브로 PR(Pull Request)를 처음 사용해보다보니, 어떻게 코멘트를 남겨야하는지 몰랐는데 리뷰어님이 친절하게 남겨주셨다.</p>
+<p> <img src="/images/retro1.png" alt="conversation">앞으로는 conversation에 상세히 작성하도록 할게요 👍🏻</p>
+</li>
+<li><p>favicon 추가하기.</p>
+ <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">Head</span>&gt;</span></span>영역에 favicon을 추가하면 좋습니다.</span><br><span class="line">일반적으로 모든 사이트에서는 favicon이 사용되고 있습니다.</span><br><span class="line">자세한 사용방법은 아래 링크의 글을 읽어보시기 바랍니다.</span><br><span class="line">favicon외에도 <span class="xml"><span class="tag">&lt;<span class="name">Head</span>&gt;</span></span>영역에 필수로 사용되는 태그들에 대한 정보가 있습니다.</span><br></pre></td></tr></table></figure>
+
+<p> <a href="https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#%EB%A7%9E%EC%B6%A4_%EC%95%84%EC%9D%B4%EC%BD%98_%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0">https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#맞춤_아이콘_추가하기</a></p>
+<p> 내가 처음 제출했던 <code>&lt;Head&gt;</code>태그는</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>GitHub<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./css/main.css&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 이랬었지만, 리뷰를 받고 수정하였다.</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>GitHub<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./css/main.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">    <span class="attr">rel</span>=<span class="string">&quot;apple-touch-icon&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">sizes</span>=<span class="string">&quot;57x57&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">href</span>=<span class="string">&quot;img/apple-icon-57x57.png&quot;</span></span></span><br><span class="line"><span class="tag">  /&gt;</span></span><br><span class="line">  ...</span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">    <span class="attr">rel</span>=<span class="string">&quot;icon&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">type</span>=<span class="string">&quot;image/png&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">sizes</span>=<span class="string">&quot;16x16&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">href</span>=<span class="string">&quot;img/favicon-16x16.png&quot;</span></span></span><br><span class="line"><span class="tag">  /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;msapplication-TileColor&quot;</span> <span class="attr">content</span>=<span class="string">&quot;#ffffff&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;msapplication-TileImage&quot;</span> <span class="attr">content</span>=<span class="string">&quot;img/ms-icon-144x144.png&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;theme-color&quot;</span> <span class="attr">content</span>=<span class="string">&quot;#ffffff&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 운영체제 별로 각 각의 사이즈 아이콘, favicon을 추가해주었다.</p>
+</li>
+<li><p>시멘틱 태그를 고려하여 <code>&lt;div&gt;</code>태그 대신 <code>&lt;ul&gt;&lt;li&gt;</code>태그 구조로 변경해주기.</p>
+<p> 나의 처음 제출한 코드는</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu clearfix&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Pull requests<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Issues<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Marketplace<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Explore<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 이랬었지만, 수정해주었다.</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;Header-item menu&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Pull requests<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Issues<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Marketplace<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Explore<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>마지막 줄 개행 (newline at a end of file)</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 이렇게 파일을 올렸었는데 html 밑에 개행을 넣어주라고 하셨다. 마지막에 개행을 넣어주는 이유는 <span  style="color: deepskyblue">POSIX</span> 명세가 그러하기 때문입니다. 명세에는 프로세스 환경, 파일과 디렉터리 등 다양한 개념을 규격화하고 있습니다. 마지막에 개행이 없다면 파일간의 차이를 알기 힘들기 때문이다.</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="💡-VS-Code에서-마지막줄-개행을-자동으로-해주는-꿀팁"><a href="#💡-VS-Code에서-마지막줄-개행을-자동으로-해주는-꿀팁" class="headerlink" title="💡 VS Code에서 마지막줄 개행을 자동으로 해주는 꿀팁 !!"></a>💡 VS Code에서 마지막줄 개행을 자동으로 해주는 꿀팁 !!</h3><ul>
+<li><p><code>VS Code</code>환경 설정에 들어간다.</p>
+<p><img src="/images/retro2.png" alt="환경설정"></p>
+</li>
+<li><p>검색 창에 <code>insert final newline</code>을 작성 후 아래에 체크를 해준다.</p>
+<p><img src="/images/retro3.png" alt="insert final newline"></p>
+</li>
+<li><p>그 후 파일을 저장하면 자동으로 마지막줄에 개행이 된다.</p>
+</li>
+</ul>
+</li>
+<li><p><code>float</code> 대신 <code>flex</code>를 사용하기</p>
+<pre><code> <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.logo</span> &#123;</span><br><span class="line">  <span class="attribute">margin-right</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">color</span>: white;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+ `float` 속성은 꼭 알아둬야하지만, 현업에서는 사용하지 않는 속성이라고 한다.
+ `float`를 `flex`로 고쳐보았다.
+
+ <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.Header</span>, <span class="selector-class">.Header-item</span> &#123;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: nowrap;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.Header-item</span> <span class="selector-class">.logo</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</code></pre>
+ <br></li>
+</ol>
+<h2 id="💬-느낀-점"><a href="#💬-느낀-점" class="headerlink" title="💬 느낀 점"></a>💬 느낀 점</h2><ul>
+<li>여지껏 혼자서만 만들고 혼자서 보다보니 이렇게 코드리뷰를 받아본 적이 없었다. 내가 부족한 부분, 그리고 어떻게 하면 더 코드가 좋아지는 지를 배울 수 있었다.</li>
+<li>학원이라는 울타리 안에 있을 때 최대한 많이 배우고 가르쳐주는 것을 많이 습득해야겠다고 생각들었다.</li>
+<li>이렇게 같이 듣는 수강생 모두가 열심히 하려는 모습을 보고, 나에대해서 반성하고 더 열심히 해야겠다는 다짐을 해주게한 하루였다.</li>
+<li>코드리뷰에 코멘트가 0이 되는 그날까지…!</li>
+</ul>
+<br>
+
+<h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a>📌 내일 할 일</h2><ul>
+<li>github 클론 코딩 더 작업하기</li>
+<li>개발블로그 작성</li>
+</ul>
+]]></content>
+      <categories>
+        <category>TIL</category>
+        <category>회고록</category>
+      </categories>
+      <tags>
+        <tag>TIL</tag>
+        <tag>회고록</tag>
       </tags>
   </entry>
   <entry>
