@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>[운영체제] 운영체제와 운영체제의 역할</title>
-    <url>/2021/07/30/CS/CS_01/</url>
+    <url>/2021/07/29/CS/CS_01/</url>
     <content><![CDATA[<h2 id="💡-운영체제란"><a href="#💡-운영체제란" class="headerlink" title="💡 운영체제란 ?"></a>💡 운영체제란 ?</h2><p><strong>운영체제(Operating System)</strong> 는 사용자가 컴퓨터를 사용하기 위해 필요한 소프트웨어이다. 우리가 일반적으로 컴퓨터를 사용하면서 실행한 모든 프로그램들은 운영체제에서 관리하고 제어한다.</p>
 <p>대표적인 운영체제는 <code>Windows OS</code>, <code>Unix</code>, <code>Mac OS</code> 등이 있다.</p>
 <span id="more"></span>
@@ -203,32 +203,6 @@
       </tags>
   </entry>
   <entry>
-    <title>[TIL]2021.07.27</title>
-    <url>/2021/07/27/TIL/20210727_TIL/</url>
-    <content><![CDATA[<h2 id="💡오늘-한-일"><a href="#💡오늘-한-일" class="headerlink" title="💡오늘 한 일"></a><strong>💡오늘 한 일</strong></h2><ul>
-<li>파이썬 인강</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="💬-느낀점"><a href="#💬-느낀점" class="headerlink" title="💬 느낀점"></a><strong>💬 느낀점</strong></h2><ul>
-<li>파이썬을 처음으로 배워보았는데, 자바스크립트의 문법과 비교하며 공부를 하였다. 자료형이 데이터를 담는 순간 정해지는 것과, 자료형마다 다른 연산을 지원한다는게 새로웠다.</li>
-<li>리스트, 튜플, 딕셔너리가 자바스크립트에서 배열과 객체의 모습과 비슷한데, 달랐다. 각 각 내장함수와 연산이 있었고(없는 것도 있다) 내장 함수가 비슷한듯 달라서 신기했다.</li>
-<li>Syntax를 더 공부해서 파이썬으로 업무자동화까지 해보아야겠다.</li>
-</ul>
-<h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a><strong>📌 내일 할 일</strong></h2><ul>
-<li>Git/Github 기초 강의</li>
-<li>Git/Github 강의 복습</li>
-<li>TIL 작성</li>
-</ul>
-]]></content>
-      <categories>
-        <category>TIL</category>
-      </categories>
-      <tags>
-        <tag>TIL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[TIL]2021.07.26</title>
     <url>/2021/07/26/TIL/20210726_TIL/</url>
     <content><![CDATA[<h2 id="💡오늘-한-일"><a href="#💡오늘-한-일" class="headerlink" title="💡오늘 한 일"></a><strong>💡오늘 한 일</strong></h2><ul>
@@ -253,6 +227,32 @@
 <li>깃허브 블로그 작업</li>
 <li>파이썬 공부</li>
 <li>Quiz 풀이</li>
+</ul>
+]]></content>
+      <categories>
+        <category>TIL</category>
+      </categories>
+      <tags>
+        <tag>TIL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[TIL]2021.07.27</title>
+    <url>/2021/07/27/TIL/20210727_TIL/</url>
+    <content><![CDATA[<h2 id="💡오늘-한-일"><a href="#💡오늘-한-일" class="headerlink" title="💡오늘 한 일"></a><strong>💡오늘 한 일</strong></h2><ul>
+<li>파이썬 인강</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="💬-느낀점"><a href="#💬-느낀점" class="headerlink" title="💬 느낀점"></a><strong>💬 느낀점</strong></h2><ul>
+<li>파이썬을 처음으로 배워보았는데, 자바스크립트의 문법과 비교하며 공부를 하였다. 자료형이 데이터를 담는 순간 정해지는 것과, 자료형마다 다른 연산을 지원한다는게 새로웠다.</li>
+<li>리스트, 튜플, 딕셔너리가 자바스크립트에서 배열과 객체의 모습과 비슷한데, 달랐다. 각 각 내장함수와 연산이 있었고(없는 것도 있다) 내장 함수가 비슷한듯 달라서 신기했다.</li>
+<li>Syntax를 더 공부해서 파이썬으로 업무자동화까지 해보아야겠다.</li>
+</ul>
+<h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a><strong>📌 내일 할 일</strong></h2><ul>
+<li>Git/Github 기초 강의</li>
+<li>Git/Github 강의 복습</li>
+<li>TIL 작성</li>
 </ul>
 ]]></content>
       <categories>
