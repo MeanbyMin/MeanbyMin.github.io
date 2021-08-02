@@ -32,8 +32,7 @@
 <p>IP(Internet Protocol)<br>211.222.444.233</p>
 <p>ip주소 확인 방법</p>
 <p>1. 네이버 -&gt; 내 ip 검색<br>2. cmd&gt; ipconfig/all 엔터<br>IPv4 주소 : 내부 아이피</p>
-<h4 id="웹표준"><a href="#웹표준" class="headerlink" title="웹표준"></a><strong>웹표준</strong></h4><p>웹에서 사용되는 표준 기술이나 규칙을 의미하며,W3C 권고안에 나온 기술들이 여기에 해당.</p>
-<p>이 표준 기술들을 기준으로 웹 브라우저들이 만들어지는데, 브라우저를 만드는 업체에서 표준 기술을 해석하는 차이, 새로운 기술 삽입 등으로 조금 다르게 구동되는 브라우저가 생김.</p>
+<h4 id="웹표준"><a href="#웹표준" class="headerlink" title="웹표준"></a><strong>웹표준</strong></h4><p>웹에서 사용되는 표준 기술이나 규칙을 의미하며,W3C 권고안에 나온 기술들이 여기에 해당.<br>이 표준 기술들을 기준으로 웹 브라우저들이 만들어지는데, 브라우저를 만드는 업체에서 표준 기술을 해석하는 차이, 새로운 기술 삽입 등으로 조금 다르게 구동되는 브라우저가 생김.</p>
 <h4 id="크로스-브라우징"><a href="#크로스-브라우징" class="headerlink" title="크로스 브라우징"></a><strong>크로스 브라우징</strong></h4><p>여러 브라우저에서 동일한 사용자 경험을 줄 수 있도록 하는 기술, 방법 등을 의미한다.<br>대부분의 브라우저는 최대한 웹 표준을 준수해서 제작되지만, MS IE 브라우저는 표준화가 쉽지 않은 브라우저다.<br>그래서 IE에서도 동작하는 것을 보통 크로스 브라우징이라고 부르기도 한다.(표준만 쓰길 원함)</p>
 <h4 id="웹-접근성"><a href="#웹-접근성" class="headerlink" title="웹 접근성"></a><strong>웹 접근성</strong></h4><p>정상적인 웹 컨텐츠 사용이 가능한 일반 사용자부터, 고령자, 장애인 같은 신체적, 환경적 조건에 제한이 있는 사용자를 포함해 모든 사용자들이 동등하게 접근할 수 있도록 웹 컨텐츠를 제작하는 방법을 말한다.</p>
 <p>시각장애인 – 리더기를 통해서 웹사이트를 읽는것을 듣는다.<br>웹 접근성에 위배되는 태그를 사용하지 않던가, 꼭 필요한 태그들은 지켜서 넣어줘야한다.</p>
@@ -249,40 +248,6 @@
       </tags>
   </entry>
   <entry>
-    <title>[TIL]2021.07.26</title>
-    <url>/2021/07/26/TIL/20210726_TIL/</url>
-    <content><![CDATA[<h2 id="💡오늘-한-일"><a href="#💡오늘-한-일" class="headerlink" title="💡오늘 한 일"></a><strong>💡오늘 한 일</strong></h2><ul>
-<li>깃허브 블로그 작업</li>
-<li>자바스크립트 인강</li>
-<li>가격별 상품 추천 프로그램 로직</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="💬-느낀점"><a href="#💬-느낀점" class="headerlink" title="💬 느낀점"></a><strong>💬 느낀점</strong></h2><ul>
-<li><p>깃허브 블로그를 어제부터 시작했다. <code>Jerkll minimal-mistakes</code> 테마를 사용해서 블로그를 꾸미고 있는데, 여러 사람의 블로그를 보고 따라서 했었다. 하지만 역시나 다른 분들이 만들어 놓은 것을 보고 내가 원하는 방식으로 꾸미는 것보다 공식문서를 보고 하는 것이 맞다고 느꼈다.</p>
-<blockquote>
-<p>공식문서를 읽자 !!</p>
-</blockquote>
-</li>
-<li><p>자바스크립트 배열을 공부했는데, 자바스크립트는 복습을 하면 할수록 받아들여지는 것이 달라지는 것 같다. 처음 봤을 때 이해 못했던 것들이 이해되기 시작하고, 포트폴리오를 만들면서 사용했던 함수들이 조금 더 정리되는 느낌을 받았다.</p>
-</li>
-<li><p>아주 간단한 문제였지만, 로직을 오랜만에 짜서 그런지 더 많은 공부를 해야겠구나 느꼈다.data 배열을 가지고 입력값에 따라서 상품을 추천해주는 프로그램 로직인데 좀 더 코드를 깔끔하게 짤 수 있을 것 같은 느낌이 드는데 코드를 줄이지 못했다. 조금 더 생각해보아야 할 듯하다.</p>
-</li>
-</ul>
-<h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a><strong>📌 내일 할 일</strong></h2><ul>
-<li>깃허브 블로그 작업</li>
-<li>파이썬 공부</li>
-<li>Quiz 풀이</li>
-</ul>
-]]></content>
-      <categories>
-        <category>TIL</category>
-      </categories>
-      <tags>
-        <tag>TIL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[TIL]2021.07.27</title>
     <url>/2021/07/27/TIL/20210727_TIL/</url>
     <content><![CDATA[<h2 id="💡오늘-한-일"><a href="#💡오늘-한-일" class="headerlink" title="💡오늘 한 일"></a><strong>💡오늘 한 일</strong></h2><ul>
@@ -348,6 +313,40 @@
       </tags>
   </entry>
   <entry>
+    <title>[TIL]2021.07.26</title>
+    <url>/2021/07/26/TIL/20210726_TIL/</url>
+    <content><![CDATA[<h2 id="💡오늘-한-일"><a href="#💡오늘-한-일" class="headerlink" title="💡오늘 한 일"></a><strong>💡오늘 한 일</strong></h2><ul>
+<li>깃허브 블로그 작업</li>
+<li>자바스크립트 인강</li>
+<li>가격별 상품 추천 프로그램 로직</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="💬-느낀점"><a href="#💬-느낀점" class="headerlink" title="💬 느낀점"></a><strong>💬 느낀점</strong></h2><ul>
+<li><p>깃허브 블로그를 어제부터 시작했다. <code>Jerkll minimal-mistakes</code> 테마를 사용해서 블로그를 꾸미고 있는데, 여러 사람의 블로그를 보고 따라서 했었다. 하지만 역시나 다른 분들이 만들어 놓은 것을 보고 내가 원하는 방식으로 꾸미는 것보다 공식문서를 보고 하는 것이 맞다고 느꼈다.</p>
+<blockquote>
+<p>공식문서를 읽자 !!</p>
+</blockquote>
+</li>
+<li><p>자바스크립트 배열을 공부했는데, 자바스크립트는 복습을 하면 할수록 받아들여지는 것이 달라지는 것 같다. 처음 봤을 때 이해 못했던 것들이 이해되기 시작하고, 포트폴리오를 만들면서 사용했던 함수들이 조금 더 정리되는 느낌을 받았다.</p>
+</li>
+<li><p>아주 간단한 문제였지만, 로직을 오랜만에 짜서 그런지 더 많은 공부를 해야겠구나 느꼈다.data 배열을 가지고 입력값에 따라서 상품을 추천해주는 프로그램 로직인데 좀 더 코드를 깔끔하게 짤 수 있을 것 같은 느낌이 드는데 코드를 줄이지 못했다. 조금 더 생각해보아야 할 듯하다.</p>
+</li>
+</ul>
+<h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a><strong>📌 내일 할 일</strong></h2><ul>
+<li>깃허브 블로그 작업</li>
+<li>파이썬 공부</li>
+<li>Quiz 풀이</li>
+</ul>
+]]></content>
+      <categories>
+        <category>TIL</category>
+      </categories>
+      <tags>
+        <tag>TIL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>[TIL]2021.07.29</title>
     <url>/2021/07/29/TIL/20210729_TIL/</url>
     <content><![CDATA[<h2 id="💡-오늘-한-일"><a href="#💡-오늘-한-일" class="headerlink" title="💡 오늘 한 일"></a>💡 오늘 한 일</h2><ul>
@@ -379,89 +378,6 @@
       </categories>
       <tags>
         <tag>TIL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[TIL]2021.07.30 + 회고</title>
-    <url>/2021/07/30/TIL/20210730_TIL/</url>
-    <content><![CDATA[<h2 id="💡-오늘-한-일"><a href="#💡-오늘-한-일" class="headerlink" title="💡 오늘 한 일"></a>💡 오늘 한 일</h2><ul>
-<li>Rubber Duck Debugging</li>
-<li>개발 블로그 작성</li>
-<li>Quiz 제작</li>
-</ul>
-<span id="more"></span>
-
-<br>
-
-<h2 id="✍🏻-회고"><a href="#✍🏻-회고" class="headerlink" title="✍🏻 회고"></a>✍🏻 회고</h2><ol>
-<li><p>깃허브로 PR(Pull Request)를 처음 사용해보다보니, 어떻게 코멘트를 남겨야하는지 몰랐는데 리뷰어님이 친절하게 남겨주셨다.</p>
-<p> <img src="/images/retro1.png" alt="conversation">앞으로는 conversation에 상세히 작성하도록 할게요 👍🏻</p>
-</li>
-<li><p>favicon 추가하기.</p>
- <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">Head</span>&gt;</span></span>영역에 favicon을 추가하면 좋습니다.</span><br><span class="line">일반적으로 모든 사이트에서는 favicon이 사용되고 있습니다.</span><br><span class="line">자세한 사용방법은 아래 링크의 글을 읽어보시기 바랍니다.</span><br><span class="line">favicon외에도 <span class="xml"><span class="tag">&lt;<span class="name">Head</span>&gt;</span></span>영역에 필수로 사용되는 태그들에 대한 정보가 있습니다.</span><br></pre></td></tr></table></figure>
-
-<p> <a href="https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#%EB%A7%9E%EC%B6%A4_%EC%95%84%EC%9D%B4%EC%BD%98_%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0">https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#맞춤_아이콘_추가하기</a></p>
-<p> 내가 처음 제출했던 <code>&lt;Head&gt;</code>태그는</p>
- <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>GitHub<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./css/main.css&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p> 이랬었지만, 리뷰를 받고 수정하였다.</p>
- <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>GitHub<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./css/main.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">    <span class="attr">rel</span>=<span class="string">&quot;apple-touch-icon&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">sizes</span>=<span class="string">&quot;57x57&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">href</span>=<span class="string">&quot;img/apple-icon-57x57.png&quot;</span></span></span><br><span class="line"><span class="tag">  /&gt;</span></span><br><span class="line">  ...</span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">    <span class="attr">rel</span>=<span class="string">&quot;icon&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">type</span>=<span class="string">&quot;image/png&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">sizes</span>=<span class="string">&quot;16x16&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">href</span>=<span class="string">&quot;img/favicon-16x16.png&quot;</span></span></span><br><span class="line"><span class="tag">  /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;msapplication-TileColor&quot;</span> <span class="attr">content</span>=<span class="string">&quot;#ffffff&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;msapplication-TileImage&quot;</span> <span class="attr">content</span>=<span class="string">&quot;img/ms-icon-144x144.png&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;theme-color&quot;</span> <span class="attr">content</span>=<span class="string">&quot;#ffffff&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p> 운영체제 별로 각 각의 사이즈 아이콘, favicon을 추가해주었다.</p>
-</li>
-<li><p>시멘틱 태그를 고려하여 <code>&lt;div&gt;</code>태그 대신 <code>&lt;ul&gt;&lt;li&gt;</code>태그 구조로 변경해주기.</p>
-<p> 나의 처음 제출한 코드는</p>
- <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu clearfix&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Pull requests<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Issues<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Marketplace<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Explore<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p> 이랬었지만, 수정해주었다.</p>
- <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;Header-item menu&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Pull requests<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Issues<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Marketplace<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Explore<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>마지막 줄 개행 (newline at a end of file)</p>
- <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p> 이렇게 파일을 올렸었는데 html 밑에 개행을 넣어주라고 하셨다. 마지막에 개행을 넣어주는 이유는 <span  style="color: deepskyblue">POSIX</span> 명세가 그러하기 때문입니다. 명세에는 프로세스 환경, 파일과 디렉터리 등 다양한 개념을 규격화하고 있습니다. 마지막에 개행이 없다면 파일간의 차이를 알기 힘들기 때문이다.</p>
- <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="💡-VS-Code에서-마지막줄-개행을-자동으로-해주는-꿀팁"><a href="#💡-VS-Code에서-마지막줄-개행을-자동으로-해주는-꿀팁" class="headerlink" title="💡 VS Code에서 마지막줄 개행을 자동으로 해주는 꿀팁 !!"></a>💡 VS Code에서 마지막줄 개행을 자동으로 해주는 꿀팁 !!</h3><ul>
-<li><p><code>VS Code</code>환경 설정에 들어간다.</p>
-<p><img src="/images/retro2.png" alt="환경설정"></p>
-</li>
-<li><p>검색 창에 <code>insert final newline</code>을 작성 후 아래에 체크를 해준다.</p>
-<p><img src="/images/retro3.png" alt="insert final newline"></p>
-</li>
-<li><p>그 후 파일을 저장하면 자동으로 마지막줄에 개행이 된다.</p>
-</li>
-</ul>
-</li>
-<li><p><code>float</code> 대신 <code>flex</code>를 사용하기</p>
-<pre><code> <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.logo</span> &#123;</span><br><span class="line">  <span class="attribute">margin-right</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">color</span>: white;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
- `float` 속성은 꼭 알아둬야하지만, 현업에서는 사용하지 않는 속성이라고 한다.
- `float`를 `flex`로 고쳐보았다.
-
- <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.Header</span>, <span class="selector-class">.Header-item</span> &#123;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: nowrap;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.Header-item</span> <span class="selector-class">.logo</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</code></pre>
- <br></li>
-</ol>
-<h2 id="💬-느낀-점"><a href="#💬-느낀-점" class="headerlink" title="💬 느낀 점"></a>💬 느낀 점</h2><ul>
-<li>여지껏 혼자서만 만들고 혼자서 보다보니 이렇게 코드리뷰를 받아본 적이 없었다. 내가 부족한 부분, 그리고 어떻게 하면 더 코드가 좋아지는 지를 배울 수 있었다.</li>
-<li>학원이라는 울타리 안에 있을 때 최대한 많이 배우고 가르쳐주는 것을 많이 습득해야겠다고 생각들었다.</li>
-<li>이렇게 같이 듣는 수강생 모두가 열심히 하려는 모습을 보고, 나에대해서 반성하고 더 열심히 해야겠다는 다짐을 해주게한 하루였다.</li>
-<li>코드리뷰에 코멘트가 0이 되는 그날까지…!</li>
-</ul>
-<br>
-
-<h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a>📌 내일 할 일</h2><ul>
-<li>github 클론 코딩 더 작업하기</li>
-<li>개발블로그 작성</li>
-</ul>
-]]></content>
-      <categories>
-        <category>TIL</category>
-        <category>회고록</category>
-      </categories>
-      <tags>
-        <tag>TIL</tag>
-        <tag>회고록</tag>
       </tags>
   </entry>
   <entry>
@@ -728,6 +644,89 @@
         <tag>파이썬</tag>
         <tag>python</tag>
         <tag>파이썬 설치</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[TIL]2021.07.30 + 회고</title>
+    <url>/2021/07/30/TIL/20210730_TIL/</url>
+    <content><![CDATA[<h2 id="💡-오늘-한-일"><a href="#💡-오늘-한-일" class="headerlink" title="💡 오늘 한 일"></a>💡 오늘 한 일</h2><ul>
+<li>Rubber Duck Debugging</li>
+<li>개발 블로그 작성</li>
+<li>Quiz 제작</li>
+</ul>
+<span id="more"></span>
+
+<br>
+
+<h2 id="✍🏻-회고"><a href="#✍🏻-회고" class="headerlink" title="✍🏻 회고"></a>✍🏻 회고</h2><ol>
+<li><p>깃허브로 PR(Pull Request)를 처음 사용해보다보니, 어떻게 코멘트를 남겨야하는지 몰랐는데 리뷰어님이 친절하게 남겨주셨다.</p>
+<p> <img src="/images/retro1.png" alt="conversation">앞으로는 conversation에 상세히 작성하도록 할게요 👍🏻</p>
+</li>
+<li><p>favicon 추가하기.</p>
+ <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">Head</span>&gt;</span></span>영역에 favicon을 추가하면 좋습니다.</span><br><span class="line">일반적으로 모든 사이트에서는 favicon이 사용되고 있습니다.</span><br><span class="line">자세한 사용방법은 아래 링크의 글을 읽어보시기 바랍니다.</span><br><span class="line">favicon외에도 <span class="xml"><span class="tag">&lt;<span class="name">Head</span>&gt;</span></span>영역에 필수로 사용되는 태그들에 대한 정보가 있습니다.</span><br></pre></td></tr></table></figure>
+
+<p> <a href="https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#%EB%A7%9E%EC%B6%A4_%EC%95%84%EC%9D%B4%EC%BD%98_%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0">https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#맞춤_아이콘_추가하기</a></p>
+<p> 내가 처음 제출했던 <code>&lt;Head&gt;</code>태그는</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>GitHub<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./css/main.css&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 이랬었지만, 리뷰를 받고 수정하였다.</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>GitHub<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./css/main.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">    <span class="attr">rel</span>=<span class="string">&quot;apple-touch-icon&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">sizes</span>=<span class="string">&quot;57x57&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">href</span>=<span class="string">&quot;img/apple-icon-57x57.png&quot;</span></span></span><br><span class="line"><span class="tag">  /&gt;</span></span><br><span class="line">  ...</span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">    <span class="attr">rel</span>=<span class="string">&quot;icon&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">type</span>=<span class="string">&quot;image/png&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">sizes</span>=<span class="string">&quot;16x16&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">href</span>=<span class="string">&quot;img/favicon-16x16.png&quot;</span></span></span><br><span class="line"><span class="tag">  /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;msapplication-TileColor&quot;</span> <span class="attr">content</span>=<span class="string">&quot;#ffffff&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;msapplication-TileImage&quot;</span> <span class="attr">content</span>=<span class="string">&quot;img/ms-icon-144x144.png&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;theme-color&quot;</span> <span class="attr">content</span>=<span class="string">&quot;#ffffff&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 운영체제 별로 각 각의 사이즈 아이콘, favicon을 추가해주었다.</p>
+</li>
+<li><p>시멘틱 태그를 고려하여 <code>&lt;div&gt;</code>태그 대신 <code>&lt;ul&gt;&lt;li&gt;</code>태그 구조로 변경해주기.</p>
+<p> 나의 처음 제출한 코드는</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu clearfix&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Pull requests<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Issues<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Marketplace<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Explore<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 이랬었지만, 수정해주었다.</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;Header-item menu&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Pull requests<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Issues<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Marketplace<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>Explore<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>마지막 줄 개행 (newline at a end of file)</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 이렇게 파일을 올렸었는데 html 밑에 개행을 넣어주라고 하셨다. 마지막에 개행을 넣어주는 이유는 <span  style="color: deepskyblue">POSIX</span> 명세가 그러하기 때문입니다. 명세에는 프로세스 환경, 파일과 디렉터리 등 다양한 개념을 규격화하고 있습니다. 마지막에 개행이 없다면 파일간의 차이를 알기 힘들기 때문이다.</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="💡-VS-Code에서-마지막줄-개행을-자동으로-해주는-꿀팁"><a href="#💡-VS-Code에서-마지막줄-개행을-자동으로-해주는-꿀팁" class="headerlink" title="💡 VS Code에서 마지막줄 개행을 자동으로 해주는 꿀팁 !!"></a>💡 VS Code에서 마지막줄 개행을 자동으로 해주는 꿀팁 !!</h3><ul>
+<li><p><code>VS Code</code>환경 설정에 들어간다.</p>
+<p><img src="/images/retro2.png" alt="환경설정"></p>
+</li>
+<li><p>검색 창에 <code>insert final newline</code>을 작성 후 아래에 체크를 해준다.</p>
+<p><img src="/images/retro3.png" alt="insert final newline"></p>
+</li>
+<li><p>그 후 파일을 저장하면 자동으로 마지막줄에 개행이 된다.</p>
+</li>
+</ul>
+</li>
+<li><p><code>float</code> 대신 <code>flex</code>를 사용하기</p>
+<pre><code> <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.logo</span> &#123;</span><br><span class="line">  <span class="attribute">margin-right</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">color</span>: white;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+ `float` 속성은 꼭 알아둬야하지만, 현업에서는 사용하지 않는 속성이라고 한다.
+ `float`를 `flex`로 고쳐보았다.
+
+ <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.Header</span>, <span class="selector-class">.Header-item</span> &#123;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: nowrap;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.Header-item</span> <span class="selector-class">.logo</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</code></pre>
+ <br></li>
+</ol>
+<h2 id="💬-느낀-점"><a href="#💬-느낀-점" class="headerlink" title="💬 느낀 점"></a>💬 느낀 점</h2><ul>
+<li>여지껏 혼자서만 만들고 혼자서 보다보니 이렇게 코드리뷰를 받아본 적이 없었다. 내가 부족한 부분, 그리고 어떻게 하면 더 코드가 좋아지는 지를 배울 수 있었다.</li>
+<li>학원이라는 울타리 안에 있을 때 최대한 많이 배우고 가르쳐주는 것을 많이 습득해야겠다고 생각들었다.</li>
+<li>이렇게 같이 듣는 수강생 모두가 열심히 하려는 모습을 보고, 나에대해서 반성하고 더 열심히 해야겠다는 다짐을 해주게한 하루였다.</li>
+<li>코드리뷰에 코멘트가 0이 되는 그날까지…!</li>
+</ul>
+<br>
+
+<h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a>📌 내일 할 일</h2><ul>
+<li>github 클론 코딩 더 작업하기</li>
+<li>개발블로그 작성</li>
+</ul>
+]]></content>
+      <categories>
+        <category>TIL</category>
+        <category>회고록</category>
+      </categories>
+      <tags>
+        <tag>TIL</tag>
+        <tag>회고록</tag>
       </tags>
   </entry>
 </search>
