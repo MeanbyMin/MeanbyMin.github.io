@@ -9,8 +9,35 @@
     <atom:link href="https://meanbymin.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>MeanbyMin의 개발 블로그</description>
-    <pubDate>Fri, 30 Jul 2021 06:17:06 GMT</pubDate>
+    <pubDate>Mon, 02 Aug 2021 14:16:18 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[TIL]2021.08.02</title>
+      <link>https://meanbymin.github.io/2021/08/02/TIL/20210802_TIL/</link>
+      <guid>https://meanbymin.github.io/2021/08/02/TIL/20210802_TIL/</guid>
+      <pubDate>Sun, 01 Aug 2021 15:00:00 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;💡-오늘-한-일&quot;&gt;&lt;a href=&quot;#💡-오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;💡 오늘 한 일&quot;&gt;&lt;/a&gt;💡 오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;클린코드(에자일 소프트웨어 장인정신 로버트 C.마틴 지음) 책 독서(p0 ~ p38)&lt;/li&gt;
+&lt;li&gt;개발 블로그 작성&lt;/li&gt;
+&lt;li&gt;파이썬 인강 시청&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="💡-오늘-한-일"><a href="#💡-오늘-한-일" class="headerlink" title="💡 오늘 한 일"></a>💡 오늘 한 일</h2><ul><li>클린코드(에자일 소프트웨어 장인정신 로버트 C.마틴 지음) 책 독서(p0 ~ p38)</li><li>개발 블로그 작성</li><li>파이썬 인강 시청</li></ul><span id="more"></span><br><h2 id="💬-느낀-점"><a href="#💬-느낀-점" class="headerlink" title="💬 느낀 점"></a>💬 느낀 점</h2><ul><li><p>코딩 관련 서적을 사서 읽기 시작했다. <code>미친듯이 심플</code>이라는 책과 <code>Clean Code</code> 책 두 권을 추천받았는데, <code>Simple is Best</code>라고 생각하고, 스티븐 잡스도 너무나 좋아하지만, 나의 조금이나마 더 나아진 코드를 위하여 <code>Clean Code</code>책을 선택하였다.</p></li><li><p>1장인 <strong>깨끗한 코드</strong>와 2장인 <strong>의미 있는 이름</strong>까지 읽었다. 나는 1장에서는 <code>그래디 부치(Grady Booch)</code>가 말한</p><blockquote><p>깨끗한 코드는 단순하고 직접적이다. 깨끗한 코드는 잘 쓴 문장처럼 읽힌다. 깨끗한 코드는 결코 설계자의 의도를 숨기지 않는다. 오히려 명쾌한 추상화와 단순한 제어문으로 가득하다.</p></blockquote><p>라는 글을 보고 내가 그렇게 코드를 짜야겠구나 ! 라고 생각이 들었다.</p></li><li><p>2장에서는 <code>검색하기 쉬운 이름을 사용하라</code> 라는 섹션이 있는데, 그 곳에서의 예시가</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;<span class="number">34</span>; j++) &#123;</span><br><span class="line">  s += (t[j]*<span class="number">4</span>)/<span class="number">5</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">와</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> realDaysPerIdealDay = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> WORK_DAYS_PER_WEEK = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j &lt; NUMBER_OF_TASKS; j++) &#123;</span><br><span class="line">  <span class="keyword">int</span> realTaskDays = taskEstimate[j] * realDaysPerIdealDay;</span><br><span class="line">  <span class="keyword">int</span> realTaskWeeks = (realTaskDays / WORK_DAYS_PER_WEEK);</span><br><span class="line">  sum += realTaskWeeks;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>라고 나와있는데,</p><blockquote><p>‘내가 여지껏 써왔던 코드가 위의 코드였구나. 나만 알아볼 수 있는 코드를 사용했고 어떻게든 구현에만 포커스를 맞췄구나’</p></blockquote><p>라는 생각이 들었다. 아래 코드를 보면 어디에서 사용했는지를 몰라도 어떤 것을 표현하려고 하는구나 라고 이해가 되는 것을 보고 망치 🔨 로 머리를 한 대 맞은 듯한 느낌이였다. 책을 열심히 읽어서 더 나은 더 깨끗한 코드를 쓸 수 있도록 하자.</p></li><li><p>파이썬을 처음으로 배우고 있다. 자바스크립트와는 또 다른, 유연한 언어이면서도 타입이 있는 그런 언어라는 생각이 든다. 조건문, 반복문, 함수 사용, 클래스에 대해서 오늘 배웠는데 클래스 <code>Class</code>부분이 특히 재미있었다.</p></li><li><p>클래스란 ? 변수와 함수의 집합. 즉 변수와 함수를 가진 나만의 자료형이다.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> 클래스이름:</span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">    self.변수명 = 변수값</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> 함수명(<span class="params">self, 인자값 변수명...</span>):</span></span><br><span class="line">    실행할 코드</span><br><span class="line">    실행할 코드</span><br></pre></td></tr></table></figure><ul><li><code>__init__</code> 함수<ul><li>생성자라고 부르는 함수.</li><li>클래스 변수가 생성될 때 자동으로 호출되는 함수.</li><li>클래스 변수 안에 변수를 생성할 때 사용</li></ul></li><li><code>생성자</code>란?<ul><li>클래스 변수가 생성될 때 자동으로 호출되는 함수</li><li>클래스 내부에 정의된 변수 등을 초기화할 때 사용.</li></ul></li><li><code>self</code><ul><li>class가 가진 변수로 만들어준다.</li><li>class안에 있는 변수나 함수에 접근한다.</li><li>내부에서 활용되는 함수이므로 <code>count</code>되지 않는다.</li></ul></li></ul><p>이렇게 class에 대해서 배워보았는데, 아주 흥미로운 문법이라고 생각한다.</p></li></ul><br><h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a>📌 내일 할 일</h2><ul><li>클린코드 독서</li><li>파이썬 인강 시청</li><li>Git/GitHub 복습</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://meanbymin.github.io/categories/TIL/">TIL</category>
+      
+      
+      <category domain="https://meanbymin.github.io/tags/TIL/">TIL</category>
+      
+      
+      <comments>https://meanbymin.github.io/2021/08/02/TIL/20210802_TIL/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[Git] Push한 Commit 수정하기</title>
