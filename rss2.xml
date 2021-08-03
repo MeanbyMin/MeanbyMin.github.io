@@ -9,8 +9,33 @@
     <atom:link href="https://meanbymin.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>MeanbyMin의 개발 블로그</description>
-    <pubDate>Mon, 02 Aug 2021 15:02:35 GMT</pubDate>
+    <pubDate>Tue, 03 Aug 2021 14:30:36 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[TIL]2021.08.03</title>
+      <link>https://meanbymin.github.io/2021/08/03/TIL/20210803_TIL/</link>
+      <guid>https://meanbymin.github.io/2021/08/03/TIL/20210803_TIL/</guid>
+      <pubDate>Mon, 02 Aug 2021 15:00:00 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;💡-오늘-한-일&quot;&gt;&lt;a href=&quot;#💡-오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;💡 오늘 한 일&quot;&gt;&lt;/a&gt;💡 오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;파이썬 인강 시청&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="💡-오늘-한-일"><a href="#💡-오늘-한-일" class="headerlink" title="💡 오늘 한 일"></a>💡 오늘 한 일</h2><ul><li>파이썬 인강 시청</li></ul><span id="more"></span><br><h2 id="💬-느낀-점"><a href="#💬-느낀-점" class="headerlink" title="💬 느낀 점"></a>💬 느낀 점</h2><ul><li><p>업무 자동화를 위한 수업을 듣고 있는데 파이썬에서 패키지 관리자 활용하기, 텍스트 파일 활용하기, 엑셀 파일 활용하기 등을 배웠다.</p></li><li><p>앞으로 이메일을 활용하는 법을 배울 것이 남았는데 이것을 활용해서 엑셀 DB를 이용한 이메일 발송 자동화 프로그램을 구현할 것이다. 사용자가 원하는 키워드를 입력 받아서 네이버 뉴스를 수집해주는 모듈을 이용해서 해당 키워드 뉴스 수집 후 엑셀 파일에 제목, 링크, 요약문을 기록하고 그 수집 데이터 엑셀 파일을 메일링 대상자 엑셀 파일을 읽어 대상자들에게 메일 보내는 프로그램을 구현할 것이다.</p><details>   <summary>  Quiz ✍🏻  </summary><h3 id="1-다음-중-name-내장-변수-설명-중-틀린-것은"><a href="#1-다음-중-name-내장-변수-설명-중-틀린-것은" class="headerlink" title="1. 다음 중 __name__ 내장 변수 설명 중 틀린 것은 ?"></a>1. 다음 중 <code>__name__</code> 내장 변수 설명 중 틀린 것은 ?</h3><ol><li>파이썬에서 가지고 있는 기본 내장 변수이다.</li><li>테스트 할때 사용을 한다.</li><li><code>__name__</code> 변수를 가지고 있는 파일을 직접 실행시키면 <code>__main__</code> 이 출력된다</li><li><code>from ~ import</code> 에 대해서 실행된다</li></ol><details>  <summary>    답/해설 💯  </summary><p>답 : 4번</p><p><code>__name__</code> 테스트 할 때 사용되며, 변수를 가지고 있는 파일을 실행시키면 <code>__main__</code> 이 출력됩니다.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span> :</span><br><span class="line">  실행문(테스트 코드)</span><br></pre></td></tr></table></figure><p>방식으로 사용됩니다.</p><p><code>from ~ import</code> 에 대해서는 실행이 되지 않습니다.</p></details><hr><h3 id="2-다음-중-CSV-파일의-설명으로-틀린-것은"><a href="#2-다음-중-CSV-파일의-설명으로-틀린-것은" class="headerlink" title="2. 다음 중 CSV 파일의 설명으로 틀린 것은?"></a>2. 다음 중 CSV 파일의 설명으로 틀린 것은?</h3><ol><li>comma-seperated values의 약자이다.</li><li><code>,</code> 와 개행 문자로 구분된 파일이다.</li><li>엑셀과 유사한 형태로 읽고 쓸 수 있다.</li><li><code>,</code> 로 <code>행(row)</code>을 구분하고 개행 문자로 <code>열(col)</code>을 구분합니다.</li></ol><details>  <summary>    답/해설 💯  </summary><p>답 : 4번</p><p><code>,</code> 로 <code>열(column)</code>을 구분하고 개행 문자로 <code>행(row)</code>을 구분합니다.</p></details><hr><h3 id="3-다음-설명에-해당하는-것으로-맞는-것은"><a href="#3-다음-설명에-해당하는-것으로-맞는-것은" class="headerlink" title="3. 다음 설명에 해당하는 것으로 맞는 것은 ?"></a>3. 다음 설명에 해당하는 것으로 맞는 것은 ?</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 엑셀 파일이 매우 큰 경우 사용합니다.</span></span><br><span class="line"><span class="comment"># 엑셀 내용을 다 가져오지 않을 때 사용합니다.</span></span><br><span class="line"><span class="comment"># 이것을 사용했을 때 iter_rows()함수를 사용하는 것을 권장합니다.</span></span><br><span class="line"><span class="comment"># 이것을 사용했을 때 열 단위로는 데이터를 가져올 수 없습니다.</span></span><br></pre></td></tr></table></figure><ol><li><code>read_only=True</code></li><li><code>max_col</code></li><li><code>Workbook</code></li><li><code>create_sheet()</code></li></ol><details>  <summary>    답/해설 💯  </summary><p>답 : 1번</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> openpyxl <span class="keyword">import</span> load-workbook</span><br><span class="line">wb = load_workbook(<span class="string">&#x27;파일명&#x27;</span>, read_only=<span class="literal">True</span>)</span><br><span class="line"><span class="comment"># 읽기전용 엑셀파일 : 내용을 다 가져오지 않습니다.</span></span><br></pre></td></tr></table></figure></details></details></li></ul><br><h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a>📌 내일 할 일</h2><ul><li>클린코드 독서</li><li>컴퓨터공학(운영체제) 인강 시청</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://meanbymin.github.io/categories/TIL/">TIL</category>
+      
+      
+      <category domain="https://meanbymin.github.io/tags/TIL/">TIL</category>
+      
+      
+      <comments>https://meanbymin.github.io/2021/08/03/TIL/20210803_TIL/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Front-End의 첫걸음</title>
@@ -202,6 +227,31 @@
     </item>
     
     <item>
+      <title>[TIL]2021.07.27</title>
+      <link>https://meanbymin.github.io/2021/07/27/TIL/20210727_TIL/</link>
+      <guid>https://meanbymin.github.io/2021/07/27/TIL/20210727_TIL/</guid>
+      <pubDate>Mon, 26 Jul 2021 15:00:00 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;💡오늘-한-일&quot;&gt;&lt;a href=&quot;#💡오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;💡오늘 한 일&quot;&gt;&lt;/a&gt;&lt;strong&gt;💡오늘 한 일&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;파이썬 인강&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="💡오늘-한-일"><a href="#💡오늘-한-일" class="headerlink" title="💡오늘 한 일"></a><strong>💡오늘 한 일</strong></h2><ul><li>파이썬 인강</li></ul><span id="more"></span><h2 id="💬-느낀점"><a href="#💬-느낀점" class="headerlink" title="💬 느낀점"></a><strong>💬 느낀점</strong></h2><ul><li>파이썬을 처음으로 배워보았는데, 자바스크립트의 문법과 비교하며 공부를 하였다. 자료형이 데이터를 담는 순간 정해지는 것과, 자료형마다 다른 연산을 지원한다는게 새로웠다.</li><li>리스트, 튜플, 딕셔너리가 자바스크립트에서 배열과 객체의 모습과 비슷한데, 달랐다. 각 각 내장함수와 연산이 있었고(없는 것도 있다) 내장 함수가 비슷한듯 달라서 신기했다.</li><li>Syntax를 더 공부해서 파이썬으로 업무자동화까지 해보아야겠다.</li></ul><h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a><strong>📌 내일 할 일</strong></h2><ul><li>Git/Github 기초 강의</li><li>Git/Github 강의 복습</li><li>TIL 작성</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://meanbymin.github.io/categories/TIL/">TIL</category>
+      
+      
+      <category domain="https://meanbymin.github.io/tags/TIL/">TIL</category>
+      
+      
+      <comments>https://meanbymin.github.io/2021/07/27/TIL/20210727_TIL/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>파이썬 1. 파이썬 설치 및 실행</title>
       <link>https://meanbymin.github.io/2021/07/27/python/python_01/</link>
       <guid>https://meanbymin.github.io/2021/07/27/python/python_01/</guid>
@@ -225,31 +275,6 @@
       
       
       <comments>https://meanbymin.github.io/2021/07/27/python/python_01/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[TIL]2021.07.27</title>
-      <link>https://meanbymin.github.io/2021/07/27/TIL/20210727_TIL/</link>
-      <guid>https://meanbymin.github.io/2021/07/27/TIL/20210727_TIL/</guid>
-      <pubDate>Mon, 26 Jul 2021 15:00:00 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;💡오늘-한-일&quot;&gt;&lt;a href=&quot;#💡오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;💡오늘 한 일&quot;&gt;&lt;/a&gt;&lt;strong&gt;💡오늘 한 일&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;파이썬 인강&lt;/li&gt;
-&lt;/ul&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="💡오늘-한-일"><a href="#💡오늘-한-일" class="headerlink" title="💡오늘 한 일"></a><strong>💡오늘 한 일</strong></h2><ul><li>파이썬 인강</li></ul><span id="more"></span><h2 id="💬-느낀점"><a href="#💬-느낀점" class="headerlink" title="💬 느낀점"></a><strong>💬 느낀점</strong></h2><ul><li>파이썬을 처음으로 배워보았는데, 자바스크립트의 문법과 비교하며 공부를 하였다. 자료형이 데이터를 담는 순간 정해지는 것과, 자료형마다 다른 연산을 지원한다는게 새로웠다.</li><li>리스트, 튜플, 딕셔너리가 자바스크립트에서 배열과 객체의 모습과 비슷한데, 달랐다. 각 각 내장함수와 연산이 있었고(없는 것도 있다) 내장 함수가 비슷한듯 달라서 신기했다.</li><li>Syntax를 더 공부해서 파이썬으로 업무자동화까지 해보아야겠다.</li></ul><h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a><strong>📌 내일 할 일</strong></h2><ul><li>Git/Github 기초 강의</li><li>Git/Github 강의 복습</li><li>TIL 작성</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://meanbymin.github.io/categories/TIL/">TIL</category>
-      
-      
-      <category domain="https://meanbymin.github.io/tags/TIL/">TIL</category>
-      
-      
-      <comments>https://meanbymin.github.io/2021/07/27/TIL/20210727_TIL/#disqus_thread</comments>
       
     </item>
     
