@@ -48,59 +48,6 @@
       </tags>
   </entry>
   <entry>
-    <title>[Git] Push한 Commit 수정하기</title>
-    <url>/2021/07/30/Git/Git_01/</url>
-    <content><![CDATA[<h2 id="Git-push를-했는데-이상한-commit-커밋-이-올라가있다"><a href="#Git-push를-했는데-이상한-commit-커밋-이-올라가있다" class="headerlink" title="Git push를 했는데, 이상한 commit(커밋)이 올라가있다 ?"></a>Git push를 했는데, 이상한 commit(커밋)이 올라가있다 ?</h2><br>
-
-<p><img src="https://mblogthumb-phinf.pstatic.net/20160312_91/ggaymon_14577899342397WdQA_JPEG/68.jpeg?type=w800" alt="어이없어"></p>
-<span id="more"></span>
-
-<br>
-
-<p>아직까지 깃과 깃허브 초보인 나에게 잘못된 push 실수는 자주 일어나는 일이다.<br>그래서 나는 항상 다시 commit을 쓰고 push 해서 덮어썼었다.</p>
-<br>
-
-<h2 id="💡-git-push-후-commit-수정하는-법을-알아보자"><a href="#💡-git-push-후-commit-수정하는-법을-알아보자" class="headerlink" title="💡 git push 후 commit 수정하는 법을 알아보자"></a>💡 git push 후 commit 수정하는 법을 알아보자</h2><ol>
-<li><p><code>git</code> 파일이 있는 폴더로 이동합니다.</p>
-</li>
-<li><p>rebase 명령어를 실행합니다.</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git rebase HEAD~[거슬러 올라가고 싶은 커밋 수] -i</span><br></pre></td></tr></table></figure>
-
-<p>만약 바로 전 커밋의 메세지를 수정하고 싶다면,</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git rebase HEAD~1 -i</span><br></pre></td></tr></table></figure>
-
-<p>이렇게 작성하시면 됩니다.</p>
-<ol start="3">
-<li><p>이때 화면에 뜨는 <code>pick</code>을 <code>reword</code>로 변경해줍니다.</p>
-<ul>
-<li>수정은 i를 눌리면 insert mode로 진입하게 되고 수정이 가능합니다.</li>
-</ul>
-</li>
-</ol>
-<p><img src="/images/rebase.png" alt="pick"><br><img src="/images/reword.png" alt="reword"></p>
-<ol start="4">
-<li><p>수정 후 <code>esc</code>키를 눌린 후 <code>:wq</code>를 입력하고 엔터를 칩니다.</p>
-</li>
-<li><p>그렇게 하고나면 이제 진짜 <code>commit</code>을 수정할 수 있습니다. 위와 똑같이 <code>i</code>키를 눌려 편집 모드로 변경한 후 수정하시면 됩니다. 수정을 완료하였으면 <code>esc</code>키를 눌린 후에 이번에는 <code>:wq!</code>를 입력하고 편집기를 빠져나옵니다.</p>
-</li>
-<li><p>강제 <code>push</code>를 하여서 수정 내용은 원격 저장소에 반영합니다.</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push --force</span><br></pre></td></tr></table></figure>
-
-<p>만약에 현재 브랜치에 강제 푸쉬를 하려면 아래처럼 하시면 됩니다.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin [브랜치명] -f</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[운영체제] 운영체제와 운영체제의 역할</title>
     <url>/2021/07/29/CS/CS_01/</url>
     <content><![CDATA[<h2 id="💡-운영체제란"><a href="#💡-운영체제란" class="headerlink" title="💡 운영체제란 ?"></a>💡 운영체제란 ?</h2><p><strong>운영체제(Operating System)</strong> 는 사용자가 컴퓨터를 사용하기 위해 필요한 소프트웨어이다. 우리가 일반적으로 컴퓨터를 사용하면서 실행한 모든 프로그램들은 운영체제에서 관리하고 제어한다.</p>
@@ -186,6 +133,59 @@
         <tag>CS</tag>
         <tag>운영체제</tag>
         <tag>컴퓨터구조</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Git] Push한 Commit 수정하기</title>
+    <url>/2021/07/30/Git/Git_01/</url>
+    <content><![CDATA[<h2 id="Git-push를-했는데-이상한-commit-커밋-이-올라가있다"><a href="#Git-push를-했는데-이상한-commit-커밋-이-올라가있다" class="headerlink" title="Git push를 했는데, 이상한 commit(커밋)이 올라가있다 ?"></a>Git push를 했는데, 이상한 commit(커밋)이 올라가있다 ?</h2><br>
+
+<p><img src="https://mblogthumb-phinf.pstatic.net/20160312_91/ggaymon_14577899342397WdQA_JPEG/68.jpeg?type=w800" alt="어이없어"></p>
+<span id="more"></span>
+
+<br>
+
+<p>아직까지 깃과 깃허브 초보인 나에게 잘못된 push 실수는 자주 일어나는 일이다.<br>그래서 나는 항상 다시 commit을 쓰고 push 해서 덮어썼었다.</p>
+<br>
+
+<h2 id="💡-git-push-후-commit-수정하는-법을-알아보자"><a href="#💡-git-push-후-commit-수정하는-법을-알아보자" class="headerlink" title="💡 git push 후 commit 수정하는 법을 알아보자"></a>💡 git push 후 commit 수정하는 법을 알아보자</h2><ol>
+<li><p><code>git</code> 파일이 있는 폴더로 이동합니다.</p>
+</li>
+<li><p>rebase 명령어를 실행합니다.</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git rebase HEAD~[거슬러 올라가고 싶은 커밋 수] -i</span><br></pre></td></tr></table></figure>
+
+<p>만약 바로 전 커밋의 메세지를 수정하고 싶다면,</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git rebase HEAD~1 -i</span><br></pre></td></tr></table></figure>
+
+<p>이렇게 작성하시면 됩니다.</p>
+<ol start="3">
+<li><p>이때 화면에 뜨는 <code>pick</code>을 <code>reword</code>로 변경해줍니다.</p>
+<ul>
+<li>수정은 i를 눌리면 insert mode로 진입하게 되고 수정이 가능합니다.</li>
+</ul>
+</li>
+</ol>
+<p><img src="/images/rebase.png" alt="pick"><br><img src="/images/reword.png" alt="reword"></p>
+<ol start="4">
+<li><p>수정 후 <code>esc</code>키를 눌린 후 <code>:wq</code>를 입력하고 엔터를 칩니다.</p>
+</li>
+<li><p>그렇게 하고나면 이제 진짜 <code>commit</code>을 수정할 수 있습니다. 위와 똑같이 <code>i</code>키를 눌려 편집 모드로 변경한 후 수정하시면 됩니다. 수정을 완료하였으면 <code>esc</code>키를 눌린 후에 이번에는 <code>:wq!</code>를 입력하고 편집기를 빠져나옵니다.</p>
+</li>
+<li><p>강제 <code>push</code>를 하여서 수정 내용은 원격 저장소에 반영합니다.</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push --force</span><br></pre></td></tr></table></figure>
+
+<p>만약에 현재 브랜치에 강제 푸쉬를 하려면 아래처럼 하시면 됩니다.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin [브랜치명] -f</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -627,64 +627,58 @@
       </tags>
   </entry>
   <entry>
-    <title>파이썬 1. 파이썬 설치 및 실행</title>
-    <url>/2021/07/27/python/python_01/</url>
-    <content><![CDATA[<h2 id="python-설치하기"><a href="#python-설치하기" class="headerlink" title="python 설치하기"></a><strong>python 설치하기</strong></h2><span id="more"></span>
+    <title>[TIL]2021.08.04</title>
+    <url>/2021/08/04/TIL/20210804_TIL/</url>
+    <content><![CDATA[<h2 id="💡-오늘-한-일"><a href="#💡-오늘-한-일" class="headerlink" title="💡 오늘 한 일"></a>💡 오늘 한 일</h2><ul>
+<li>운영체제 인강 시청</li>
+</ul>
+<span id="more"></span>
 
 <br>
 
-<h3 id="OS-X"><a href="#OS-X" class="headerlink" title="OS X"></a><strong>OS X</strong></h3><ul>
-<li>보통 맥에는 python 2.x버전이 자동으로 설치되어 있다.</li>
-<li>python3 사용을 위해서는 별도 설치가 필요하다.</li>
-<li><a href="https://meanbymin.github.io/2021/07/27/python/2021-07-27-py_01/www.python.org">파이썬 사이트</a>에서 다운로드 메뉴 - Python 3.9이상 선택해서 다운로드</li>
-<li>설치 후, 터미널화면에서 python3이라고 입력해서 Python 3.9.6 (v3.9.6:db3ff76da1, Jun 28 2021, 11:49:53)와 비슷한 글이 뜨면 설치 완료입니다.</li>
+<h2 id="💬-느낀-점"><a href="#💬-느낀-점" class="headerlink" title="💬 느낀 점"></a>💬 느낀 점</h2><ul>
+<li><p>년도별 운영체제의 발전에 대해서 배웠다. 어떻게 발전되어왔고, 우리의 일상에 얼마나 많이 다가와있는지 느껴졌다.</p>
+</li>
+<li><p>정리</p>
+<ol>
+<li>1950년대 : 운영체제 없음(프로그램이 시스템 자원을 직접 제어)</li>
+<li>1960년대 : 배치 처리 시스템</li>
+<li>1970년대 : 시분할 시스템 / 멀티태스킹 시스템 - UNIX OS(C언어 기반)</li>
+<li>1980년대 : GUI, 개인용 컴퓨터 보급</li>
+<li>1990년대 : 다양한 응용프로그램, 인터넷 발달, 오픈 소스 운동 활성화</li>
+<li>2000년대 : 오픈 소스 활성화, 가상머신, 대용량 병렬처리</li>
+</ol>
+</li>
+<li><p>운영체제 구조</p>
+<ul>
+<li><p>Shell(쉘)</p>
+<ul>
+<li>사용자가 운영체제 기능과 서비스를 조작할 수 있도록 인터페이스를 제공하는 프로그램</li>
+<li>쉘은 터미널 환경(CLI)과 GUI환경 두 종류로 분류된다.</li>
+</ul>
+</li>
+<li><p>시스템 콜</p>
+<ul>
+<li>시스템 콜 또는 시스템 호출 인터페이스</li>
+<li>운영체제가 운영체제 각 기능을 사용할 수 있도록 시스템 콜이라는 명령 또는 함수를 제공한다.</li>
+<li>API 내부에는 시스템 콜을 호출하는 형태로 만들어지는 경우가 대부분이다.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <br>
 
-<h3 id="windows"><a href="#windows" class="headerlink" title="windows"></a><strong>windows</strong></h3><ul>
-<li><a href="https://meanbymin.github.io/2021/07/27/python/2021-07-27-py_01/www.python.org">www.python.org</a>에서 다운로드 메뉴 - Python 3.9이상 선택해서 다운로드</li>
-<li>설치 과정에서 <code>Add Python 3.9 to Path</code> 반드시 체크</li>
-<li>윈도우키 + R을 눌러서 나오는 창에 powershell이라고 치고, 확인을 눌러서 powershell실행</li>
-<li>powershell화면에서 python이라고 입력해서 오류가 나오지 않으면 설치 성공</li>
-</ul>
-<Br>
-
-<h2 id="python-실행"><a href="#python-실행" class="headerlink" title="python 실행"></a><strong>python 실행</strong></h2><Br>
-
-<h3 id="파일작성-py"><a href="#파일작성-py" class="headerlink" title="파일작성 (.py)"></a><strong>파일작성 (.py)</strong></h3><ul>
-<li><code>hello.py</code> 파일 작성</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;Hello world&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<Br>
-
-<h3 id="파일실행-터미널"><a href="#파일실행-터미널" class="headerlink" title="파일실행 (터미널)"></a><strong>파일실행 (터미널)</strong></h3><p>터미널에서 해당 파일이 들어있는 폴더로 이동한 후 <code>python hello.py</code> 입력</p>
-<figure class="highlight zsh"><table><tr><td class="code"><pre><span class="line">$ python hello.py</span><br><span class="line">Hello World</span><br></pre></td></tr></table></figure>
-
-<br>
-
-<h2 id="IDLE"><a href="#IDLE" class="headerlink" title="IDLE"></a><strong>IDLE</strong></h2><p>파이썬을 설치하면 함께 따라오는 IDLE을 사용하면 파일작성과 실행을 동시에 할 수 있다. (크롬의 개발자도구 콘솔과 유사)</p>
-<br>
-
-<h2 id="REPL"><a href="#REPL" class="headerlink" title="REPL"></a><strong>REPL</strong></h2><ul>
-<li>Read, Eval, Print, Loop 의 약자</li>
-<li>터미널, Powershell에서 파일 이름 없이 python이라고만 입력하면 나오는 창</li>
-<li>파이썬 코드를 한 줄씩 입력해 가면서 테스트 해 볼 수 있는 입력창</li>
-<li>REPL창을 종료하려면 exit(), ctrl+z 입력</li>
-</ul>
-<br>
-
-<h2 id="자바스크립트와-Python의-차이점"><a href="#자바스크립트와-Python의-차이점" class="headerlink" title="자바스크립트와 Python의 차이점"></a><strong>자바스크립트와 Python의 차이점</strong></h2><ul>
-<li><a href="https://www.slideshare.net/jisuyoun/javascript-python">Javascript개발자의 눈으로 바라보는 python 기초</a></li>
+<h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a>📌 내일 할 일</h2><ul>
+<li>클린코드 독서</li>
+<li>컴퓨터공학(운영체제) 인강 시청</li>
 </ul>
 ]]></content>
       <categories>
-        <category>python</category>
+        <category>TIL</category>
       </categories>
       <tags>
-        <tag>파이썬</tag>
-        <tag>python</tag>
-        <tag>파이썬 설치</tag>
+        <tag>TIL</tag>
       </tags>
   </entry>
   <entry>
@@ -818,6 +812,67 @@
         <tag>기술 블로그</tag>
         <tag>개발 블로그</tag>
         <tag>개발자</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>파이썬 1. 파이썬 설치 및 실행</title>
+    <url>/2021/07/27/python/python_01/</url>
+    <content><![CDATA[<h2 id="python-설치하기"><a href="#python-설치하기" class="headerlink" title="python 설치하기"></a><strong>python 설치하기</strong></h2><span id="more"></span>
+
+<br>
+
+<h3 id="OS-X"><a href="#OS-X" class="headerlink" title="OS X"></a><strong>OS X</strong></h3><ul>
+<li>보통 맥에는 python 2.x버전이 자동으로 설치되어 있다.</li>
+<li>python3 사용을 위해서는 별도 설치가 필요하다.</li>
+<li><a href="https://meanbymin.github.io/2021/07/27/python/2021-07-27-py_01/www.python.org">파이썬 사이트</a>에서 다운로드 메뉴 - Python 3.9이상 선택해서 다운로드</li>
+<li>설치 후, 터미널화면에서 python3이라고 입력해서 Python 3.9.6 (v3.9.6:db3ff76da1, Jun 28 2021, 11:49:53)와 비슷한 글이 뜨면 설치 완료입니다.</li>
+</ul>
+<br>
+
+<h3 id="windows"><a href="#windows" class="headerlink" title="windows"></a><strong>windows</strong></h3><ul>
+<li><a href="https://meanbymin.github.io/2021/07/27/python/2021-07-27-py_01/www.python.org">www.python.org</a>에서 다운로드 메뉴 - Python 3.9이상 선택해서 다운로드</li>
+<li>설치 과정에서 <code>Add Python 3.9 to Path</code> 반드시 체크</li>
+<li>윈도우키 + R을 눌러서 나오는 창에 powershell이라고 치고, 확인을 눌러서 powershell실행</li>
+<li>powershell화면에서 python이라고 입력해서 오류가 나오지 않으면 설치 성공</li>
+</ul>
+<Br>
+
+<h2 id="python-실행"><a href="#python-실행" class="headerlink" title="python 실행"></a><strong>python 실행</strong></h2><Br>
+
+<h3 id="파일작성-py"><a href="#파일작성-py" class="headerlink" title="파일작성 (.py)"></a><strong>파일작성 (.py)</strong></h3><ul>
+<li><code>hello.py</code> 파일 작성</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;Hello world&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<Br>
+
+<h3 id="파일실행-터미널"><a href="#파일실행-터미널" class="headerlink" title="파일실행 (터미널)"></a><strong>파일실행 (터미널)</strong></h3><p>터미널에서 해당 파일이 들어있는 폴더로 이동한 후 <code>python hello.py</code> 입력</p>
+<figure class="highlight zsh"><table><tr><td class="code"><pre><span class="line">$ python hello.py</span><br><span class="line">Hello World</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="IDLE"><a href="#IDLE" class="headerlink" title="IDLE"></a><strong>IDLE</strong></h2><p>파이썬을 설치하면 함께 따라오는 IDLE을 사용하면 파일작성과 실행을 동시에 할 수 있다. (크롬의 개발자도구 콘솔과 유사)</p>
+<br>
+
+<h2 id="REPL"><a href="#REPL" class="headerlink" title="REPL"></a><strong>REPL</strong></h2><ul>
+<li>Read, Eval, Print, Loop 의 약자</li>
+<li>터미널, Powershell에서 파일 이름 없이 python이라고만 입력하면 나오는 창</li>
+<li>파이썬 코드를 한 줄씩 입력해 가면서 테스트 해 볼 수 있는 입력창</li>
+<li>REPL창을 종료하려면 exit(), ctrl+z 입력</li>
+</ul>
+<br>
+
+<h2 id="자바스크립트와-Python의-차이점"><a href="#자바스크립트와-Python의-차이점" class="headerlink" title="자바스크립트와 Python의 차이점"></a><strong>자바스크립트와 Python의 차이점</strong></h2><ul>
+<li><a href="https://www.slideshare.net/jisuyoun/javascript-python">Javascript개발자의 눈으로 바라보는 python 기초</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>파이썬</tag>
+        <tag>python</tag>
+        <tag>파이썬 설치</tag>
       </tags>
   </entry>
 </search>
