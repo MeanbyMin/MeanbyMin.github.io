@@ -9,8 +9,39 @@
     <atom:link href="https://meanbymin.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>MeanbyMin의 개발 블로그</description>
-    <pubDate>Fri, 06 Aug 2021 11:41:52 GMT</pubDate>
+    <pubDate>Fri, 06 Aug 2021 12:10:03 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[TIL]2021.08.06 + 회고</title>
+      <link>https://meanbymin.github.io/2021/08/06/TIL/20210806_TIL/</link>
+      <guid>https://meanbymin.github.io/2021/08/06/TIL/20210806_TIL/</guid>
+      <pubDate>Thu, 05 Aug 2021 15:00:00 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;💡-오늘-한-일&quot;&gt;&lt;a href=&quot;#💡-오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;💡 오늘 한 일&quot;&gt;&lt;/a&gt;💡 오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Rubber Duck Debugging&lt;/li&gt;
+&lt;li&gt;개발 블로그 작성&lt;/li&gt;
+&lt;li&gt;Quiz 제작&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="💡-오늘-한-일"><a href="#💡-오늘-한-일" class="headerlink" title="💡 오늘 한 일"></a>💡 오늘 한 일</h2><ul><li>Rubber Duck Debugging</li><li>개발 블로그 작성</li><li>Quiz 제작</li></ul><span id="more"></span><br><h2 id="✍🏻-회고"><a href="#✍🏻-회고" class="headerlink" title="✍🏻 회고"></a>✍🏻 회고</h2><blockquote><p>미니 프로젝트 2<br><br>파트: JavaScript<br><br>프로젝트명: 가격 별 상품 추천 프로그램<br><br>✍🏻 과제 내용<br><br>상품 데이터가 주어졌을 때, 원하는 조건의 상품을 골라낼 수 있는 로직을 작성해주세요.<br><br>사용자가 가지고 있는 돈의 액수를 입력 받아 해당 금액에 가장 근접한 가격의 상품을 추천합니다.<br><br>배열, 객체, 반복문 등의 자바스크립트 기초 지식을 활용하는 프로젝트입니다.<br><br>📌 과제 상세 설명<br><br>상품 데이터와 사용자가 입력한 금액을 넘겨 받아 해당 금액으로 살 수 있는 가장 비싼 상품을 리턴하는 함수를 만들어야 합니다.<br><br>함수명 : getItemByAmount<br><br>인자 : 상품 데이터, 사용자가 입력한 금액<br><br>리턴 : 로직에 의해 선택된 상품 (없다면 null)<br></p></blockquote><br><ol><li><p>prompt()의 결과가 문자열일때 숫자로 변환하기.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 사용자 입력 받기</span></span><br><span class="line"><span class="keyword">const</span> line = prompt(<span class="string">&#x27;최대 금액을 입력해주세요.&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> amount = +line;</span><br></pre></td></tr></table></figure><p>이렇게 line으로 입력을 받고 line을 숫자로 변환해 주었는데, <code>+</code>의 방법 보다는 <code>parseInt(line)</code> 혹은 <code>Number(line)</code> 으로 변경해달라는 리뷰를 받아</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 사용자 입력 받기</span></span><br><span class="line"><span class="keyword">const</span> line = prompt(<span class="string">&#x27;최대 금액을 입력해주세요.&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> amount = <span class="built_in">Number</span>(line);</span><br></pre></td></tr></table></figure><p>이렇게 수정해주었다.</p></li></ol><br><ol start="2"><li><p>let 대신 const를 사용하기, 변수명 정확히 선언하기, filter 함수 두 번 사용하기</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 아래에 getItemByAmount 함수를 작성하세요.</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getItemByAmount</span>(<span class="params">data, amount</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> <span class="built_in">Object</span> = &#123;&#125;;</span><br><span class="line">  <span class="keyword">const</span> arr = data.filter(<span class="function">(<span class="params">list</span>) =&gt;</span> list.price &lt;= amount);</span><br><span class="line">  <span class="built_in">Object</span> = arr[<span class="number">0</span>];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (arr[i].price &gt; <span class="built_in">Object</span>.price) <span class="built_in">Object</span> = arr[i];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Object</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>첫 로직을 이렇게 작성하였다. <code>let Object = &#123;&#125;;</code>에서 <code>let</code> 대신 <code>const</code> 의 사용을 추천받았으며, <code>Object</code>라는 변수명이 어떤 역할을 하는지 명확하지 않아 변수명을 다시 설정하는 것이 좋겠다라고 리뷰받았다.<br>최근 Clean Code 책에서도 보았지만, 변수명만 읽어도 이 변수가 어떤 역할을 하는지 알 수 있어야 된다고 적혀있고, 깨닳았다.</p><p>그리고 위의 코드 중 <code>arr</code>를 가져오는 곳에서 <code>filter</code>를 사용하여 입력 값 보다 적은 리스트들을 담아주었고, 그 이후 <code>for</code>문을 사용해 가격을 비교해가며 최대값을 <code>Object</code> 객체에 담아주는 방식을 사용했는데, <code>for</code>문 대신 <code>filter</code>를 사용해보라 추천을 받았지만 아직 부족해서인지 변경하지 못했고 대신 <code>reduce</code>함수를 사용해보았다.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 아래에 getItemByAmount 함수를 작성하세요.</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getItemByAmount</span>(<span class="params">data, amount</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> ListToBuy = data.filter(<span class="function">(<span class="params">list</span>) =&gt;</span> list.price &lt;= amount);</span><br><span class="line">  <span class="keyword">const</span> selectedItem = ListToBuy.reduce(<span class="function">(<span class="params">prev, current</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> prev.price &gt; current.price ? prev : current;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> selectedItem;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol><br><h2 id="💬-느낀-점"><a href="#💬-느낀-점" class="headerlink" title="💬 느낀 점"></a>💬 느낀 점</h2><ul><li>다행히 칭찬을 받은 부분도 있지만, 아직도 부족함이 많다고 느꼈다. 변수명 설정부터 시작하여 내장함수의 이해도 아직 떨어진다고 느껴졌다.</li><li>rubber duck debugging 시간에 혹시나 <code>filter</code> 함수를 두 번 사용한 사람이 있을까 하고 유심히 보았는데, 아쉽게도 내가 원하는 답으로 로직을 짠 분은 보이지 않았다.</li><li>filter를 사용해 결과 도출은 하지 못했지만, <code>reduce</code>를 사용해 본것은 좋았다고 생각이 든다.</li></ul><br><h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a>📌 내일 할 일</h2><ul><li>Clean Code 독서</li><li>파이썬 인강 시청</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://meanbymin.github.io/categories/TIL/">TIL</category>
+      
+      <category domain="https://meanbymin.github.io/categories/TIL/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <category domain="https://meanbymin.github.io/tags/TIL/">TIL</category>
+      
+      <category domain="https://meanbymin.github.io/tags/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <comments>https://meanbymin.github.io/2021/08/06/TIL/20210806_TIL/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[TIL]2021.08.04</title>
