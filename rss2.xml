@@ -9,8 +9,41 @@
     <atom:link href="https://meanbymin.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>MeanbyMin의 개발 블로그</description>
-    <pubDate>Fri, 06 Aug 2021 12:10:03 GMT</pubDate>
+    <pubDate>Fri, 13 Aug 2021 18:01:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[TIL]2021.08.13 + 회고</title>
+      <link>https://meanbymin.github.io/2021/08/13/TIL/20210814_TIL/</link>
+      <guid>https://meanbymin.github.io/2021/08/13/TIL/20210814_TIL/</guid>
+      <pubDate>Thu, 12 Aug 2021 15:00:00 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;💡-오늘-한-일&quot;&gt;&lt;a href=&quot;#💡-오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;💡 오늘 한 일&quot;&gt;&lt;/a&gt;💡 오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;패턴의 정석 기본 PT &amp;amp;&amp;amp; 힙본 PT 유까로 저장&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="💡-오늘-한-일"><a href="#💡-오늘-한-일" class="headerlink" title="💡 오늘 한 일"></a>💡 오늘 한 일</h2><ul><li>패턴의 정석 기본 PT &amp;&amp; 힙본 PT 유까로 저장</li></ul><span id="more"></span><br><h2 id="✍🏻-회고"><a href="#✍🏻-회고" class="headerlink" title="✍🏻 회고"></a>✍🏻 회고</h2><p>패션계로 돌아가기로 단단히 마음을 먹었다. 1년간 방황 아닌 방황을 하며 코딩 공부를 하였는데, 코딩 공부를 하면서 배운 것들이 많다.</p><ul><li><p>첫 번째가 바로 정리가 아닐까 싶다.<br>정말 많은 개발자들이 정리를 하고 지식을 공유하며 성장해나간다. 허나 패턴사들은 모두가 그렇진 않지만, 대부분 자신의 기술을 숨기고 보여주지 않으려고만 한다. 개발자들의 좋은 문화인 정리와 공유를 나는 해볼까 한다.</p></li><li><p>두 번째는 꾸준함이다.<br>개발자들은 정말 꾸준하다. 꾸준히 노력하고, 꾸준히 성장하고, 꾸준히 지식을 갈망한다. 일만하고 내팽개치는 것이 아니라, 새로운 언어, 새로운 라이브러리, 새로운 기술에 집착하며 공부한다. 패턴에는 더 이상 나올 기술들이 없다며 말들이 많다. 하지만 정말 그런지에 대해서도 고민을 해 볼 필요가 있다.</p></li></ul><p>나는 더 이상 돌아갈 길이 없다. 어쩌면 코딩 공부 즉, 웹 개발을 공부하면서 언제나 보험마냥 패션계를 돌아갈 곳으로 마치 고향처럼 생각하고 있었다. 내가 계속 걸어왔던 길이니 말이다. 그러다 갈림길에서 다른 길을 선택하였었고, 그 길을 걷다가 되돌아 와 다시 가던길을 가게되었으니 나에겐 이제 유턴은 없는 셈이다.</p><br><p align="center">꿈꿔라. 내가 여지껏 생각했던 그 모든 것들을.<br> 생각하라. 내가 정해놓은 꿈을.</p><br><blockquote><p>예전에 하현우(국카스텐)가 이런 말을 했다. <br> “별똥별이 소원을 이뤄주는게 아니라 별똥별이 떨어지는 그 짧은 순간에도 떠오르는 소원이라면 매일같이 생각했을 것이기 때문에 그런 소원은 이뤄지는 것이다.”</p></blockquote><br><p align="center">나에게 필요한 것은 이런 꾸준한 되새김이 아닐까 싶다.</p><br><h2 id="💬-해야-할-일"><a href="#💬-해야-할-일" class="headerlink" title="💬 해야 할 일"></a>💬 해야 할 일</h2><ul><li>내가 어느 곳에서 일하고 있을지 항상 상상하기.</li><li>패턴의 정석에 있는 모든 패턴을 유까로 옮겨놓기.</li><li>모든 패턴 그레이딩 해보기.</li><li>시간될 때마다 신세계 나가서 연습하기.</li><li>하은이에게 정리법 배우기.</li></ul><br><!-- ## 📌 내일 할 일- Clean Code 독서 -->]]></content:encoded>
+      
+      
+      <category domain="https://meanbymin.github.io/categories/TIL/">TIL</category>
+      
+      <category domain="https://meanbymin.github.io/categories/TIL/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      <category domain="https://meanbymin.github.io/categories/TIL/%ED%9A%8C%EA%B3%A0%EB%A1%9D/%ED%8C%A8%ED%84%B4/">패턴</category>
+      
+      
+      <category domain="https://meanbymin.github.io/tags/TIL/">TIL</category>
+      
+      <category domain="https://meanbymin.github.io/tags/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      <category domain="https://meanbymin.github.io/tags/%ED%8C%A8%ED%84%B4/">패턴</category>
+      
+      
+      <comments>https://meanbymin.github.io/2021/08/13/TIL/20210814_TIL/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[TIL]2021.08.06 + 회고</title>
@@ -40,6 +73,35 @@
       
       
       <comments>https://meanbymin.github.io/2021/08/06/TIL/20210806_TIL/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[TIL]2021.08.07 + 회고</title>
+      <link>https://meanbymin.github.io/2021/08/06/TIL/20210807_TIL/</link>
+      <guid>https://meanbymin.github.io/2021/08/06/TIL/20210807_TIL/</guid>
+      <pubDate>Thu, 05 Aug 2021 15:00:00 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;💡-오늘-한-일&quot;&gt;&lt;a href=&quot;#💡-오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;💡 오늘 한 일&quot;&gt;&lt;/a&gt;💡 오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;오늘 하루의 회고&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="💡-오늘-한-일"><a href="#💡-오늘-한-일" class="headerlink" title="💡 오늘 한 일"></a>💡 오늘 한 일</h2><ul><li>오늘 하루의 회고</li></ul><span id="more"></span><br><h2 id="✍🏻-회고"><a href="#✍🏻-회고" class="headerlink" title="✍🏻 회고"></a>✍🏻 회고</h2><blockquote><p>어쩌면… 어쩌면… <br><br>1년간 공부했던 코딩을 그만두고 원래 했던 본 업으로 돌아가지 않을까 싶다.<br></p></blockquote><br><h2 id="💬-느낀-점"><a href="#💬-느낀-점" class="headerlink" title="💬 느낀 점"></a>💬 느낀 점</h2><ul><li>다행히 칭찬을 받은 부분도 있지만, 아직도 부족함이 많다고 느꼈다. 변수명 설정부터 시작하여 내장함수의 이해도 아직 떨어진다고 느껴졌다.</li><li>rubber duck debugging 시간에 혹시나 <code>filter</code> 함수를 두 번 사용한 사람이 있을까 하고 유심히 보았는데, 아쉽게도 내가 원하는 답으로 로직을 짠 분은 보이지 않았다.</li><li>filter를 사용해 결과 도출은 하지 못했지만, <code>reduce</code>를 사용해 본것은 좋았다고 생각이 든다.</li></ul><br><h2 id="📌-내일-할-일"><a href="#📌-내일-할-일" class="headerlink" title="📌 내일 할 일"></a>📌 내일 할 일</h2><ul><li>Clean Code 독서</li><li>파이썬 인강 시청</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://meanbymin.github.io/categories/TIL/">TIL</category>
+      
+      <category domain="https://meanbymin.github.io/categories/TIL/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <category domain="https://meanbymin.github.io/tags/TIL/">TIL</category>
+      
+      <category domain="https://meanbymin.github.io/tags/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</category>
+      
+      
+      <comments>https://meanbymin.github.io/2021/08/06/TIL/20210807_TIL/#disqus_thread</comments>
       
     </item>
     
